@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/global/global.css">
+    <link rel="stylesheet" href="css/menu/menu.css">
+    <link rel="stylesheet" href="css/sidebar/sidebar.css">
+    <link rel="stylesheet" href="css/explain/explain.css">
+
+    <title>Webhandleiding</title>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul class="itemlist">
+            <li class="listitem">
+                <a href="/">Home</a>
+            </li>
+            <li class="listitem">
+                <a onclick="return false"href="/history.html">Geschiedenis</a>
+            </li>
+            <li class="listitem">
+                <a href="/explain.html">Uitleg</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <div class="sidebar" id="sidebar">
+            <button onclick="handleToggle()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="contentlist">
+                <ul>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                    <li>D</li>
+                </ul>
+            </div>
+        </div>
+        <main class="content" id="content">
+            <h1 class="xxl">hallo</h1>
+        </main>
+    </div>
+
+    <script src="javascript/handletoggle.js"></script>
+</body>
+
+</html>

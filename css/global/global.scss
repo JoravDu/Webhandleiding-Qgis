@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"); // var
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+$colors: (
+    primary: #8bbf41,
+    secondary: #ee7914,
+    accent-light: #efe64c,
+    accent-dark: #2d2d2a,
+    white: #efeada,
+);
+
+$font-size: (
+    xxl: 4.236rem,
+    xl: 2.618rem,
+    l: 1.618rem,
+    m: 1rem,
+    s: 0.618rem,
+    lineheight-l: 1.75,
+    lineheight-m: 1.25,
+    lineheight-s: 1.125,
+);
+
+$font-weight: (
+    h-heavy: 700,
+    h-bold: 550,
+    h-medium: 450,
+    h-light: 300,
+);
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+}
+h1.xxl {
+    font-size: map-get($font-size, xxl);
+}   
+h1 {
+    font-size: map-get($font-size, xl);
+}
+h2 {
+    font-size: map-get($font-size, l);
+}
+h3, h4 {
+    font-size: map-get($font-size, m);
+}
+h5, h6 {
+    font-size: map-get($font-size, s);
+}
+h1, h2 {
+    line-height: map-get($font-size, lineheight-l);
+}
+
+h3, h4 {
+    line-height: map-get($font-size, lineheight-m);
+}
+
+h5, h6 {
+    line-height: map-get($font-size, lineheight-s);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
