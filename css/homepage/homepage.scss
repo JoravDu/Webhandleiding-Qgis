@@ -1,6 +1,74 @@
+$colors: (
+    primary: #8bbf41,
+    secondary: #ee7914,
+    accent-light: #efe64c,
+    accent-dark: #2d2d2a,
+    white: #efeada,
+);
+
 .content {
     width: 100%;
     height: auto;
-    margin-left: auto;
-}
+    .hero {
+        background-image: url("https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd");
+        background-repeat: no-repeat;
+        background-position: 0% 50%;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 40vw;
+        margin-top: 2.5vw;
+        .herotext {
+            position: absolute;
+            text-align: center;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%);
+            .xxl {
+                line-height: 1;
+            }
+            color: map-get($colors, white);
+            mix-blend-mode: difference;
+        }
+        .buttonbox {
+            height: 100px;
+            width: 90%;
+            position: absolute;
+            display: flex;
+            top: 65.5%;
+            justify-content: center;
+            .button {
+                background: map-get($colors, primary);
+                border: none;
+                height: 50px;
+                width: 125px;
+                //lb rb ro lo
+                border-radius: 100px;
+                border-bottom-left-radius: 0;
+                a {
+                    text-decoration: none;
+                    color: map-get($colors, white);
+                    text-transform: capitalize;
+                    font-size: 1.0025rem;
+                }
+            }
+        }
+    }
+    .intro {
+        margin: 5vw 0;
+        height: auto;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
 
+        h1 {
+            line-height: 2;
+        }
+        p {
+            line-height: 1.75;
+            text-align: justify;
+        }
+    }
+}
