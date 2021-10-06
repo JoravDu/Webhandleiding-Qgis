@@ -7,16 +7,91 @@
 }
 
 .focuswrapper .sidebar {
+  padding: 10px;
+  padding-right: 0;
   width: 5%;
   height: 100%;
   position: fixed;
   background: #fbfef9;
+  border-right: 0.5px solid black;
+}
+
+.focuswrapper .sidebar .button {
+  position: absolute;
+  border: none;
+  background: transparent;
+  height: 40px;
+  width: 40px;
+}
+
+.focuswrapper .sidebar .button .bar {
+  width: 30px;
+  height: 4px;
+  background: black;
+  margin: 5px;
+  display: block;
+}
+
+.focuswrapper .sidebar .sidebarcontent {
+  margin-top: 50px;
+  overflow: scroll;
+  height: calc(90% - 60px);
+}
+
+.focuswrapper .sidebar .sidebarcontent ul {
+  padding-left: 0;
+}
+
+.focuswrapper .sidebar .sidebarcontent ul li {
+  padding: 7.5px 0;
 }
 
 .focuswrapper .content {
+  text-align: justify;
   width: 93.75%;
   height: auto;
   margin-left: 6.25%;
+  padding: 2.5%;
+  padding-left: 1.25%;
+}
+
+.focuswrapper .content img {
+  height: auto;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.focuswrapper .content .downloadbox {
+  margin-top: 25px;
+}
+
+.focuswrapper .content .downloadbox .download {
+  background: #8bbf41;
+  border: none;
+  height: 50px;
+  width: auto;
+  min-width: 90px;
+  border-radius: 100px;
+  border-bottom-left-radius: 0;
+  margin-right: 15px;
+}
+
+.focuswrapper .content .downloadbox .download a {
+  padding: 20px;
+  text-decoration: none;
+  color: #fbfef9;
+  text-transform: capitalize;
+  font-size: 1.0025rem;
+}
+
+.focuswrapper .content .downloadbox .none {
+  border-bottom-left-radius: 100px;
+}
+
+.focuswrapper .content .downloadbox .cornerright {
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 0;
 }
 
 .togglesidebar {

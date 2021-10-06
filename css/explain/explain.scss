@@ -7,9 +7,9 @@
 // );
 $colors: (
     primary: #8bbf41,
-    secondary: #5941A9,
-    accent-light: #FEB95F,
-    accent-dark: #1F2041,
+    secondary: #5941a9,
+    accent-light: #feb95f,
+    accent-dark: #1f2041,
     white: #fbfef9,
 );
 
@@ -27,15 +27,82 @@ $content-margin-s: $sidebar-width-s + 1.25%;
     height: auto;
     display: flex;
     .sidebar {
+        padding: 10px;
+        padding-right: 0;
         width: 5%;
         height: 100%;
         position: fixed;
         background: map-get($colors, white);
+        border-right: 0.5px solid black;
+        .button {
+            position: absolute;
+            border: none;
+            background: transparent;
+            height: 40px;
+            width: 40px;
+            .bar {
+                width: 30px;
+                height: 4px;
+                background: black;
+                margin: 5px;
+                display: block;
+            }
+        }
+        .sidebarcontent {
+            margin-top: 50px;
+            overflow: scroll;
+            height: calc(90% - 60px);
+            ul {
+                padding-left: 0;
+                li {
+                    padding: 7.5px 0;
+                }
+            }
+        }
     }
     .content {
+        text-align: justify;
         width: $content-width-l;
         height: auto;
         margin-left: $content-margin-s;
+        padding: 2.5%;
+        padding-left: 1.25%;
+
+        img {
+            height: auto;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .downloadbox {
+            margin-top: 25px;
+            .download {
+                background: map-get($colors, primary);
+                border: none;
+                height: 50px;
+                width: auto;
+                min-width: 90px;
+                //lb rb ro lo
+                border-radius: 100px;
+                border-bottom-left-radius: 0;
+                margin-right: 15px;
+                a {
+                    padding: 20px;
+                    text-decoration: none;
+                    color: map-get($colors, white);
+                    text-transform: capitalize;
+                    font-size: 1.0025rem;
+                }
+            }
+            .none {
+                border-bottom-left-radius: 100px;
+            }
+            .cornerright {
+                border-bottom-left-radius: 100px;
+                border-bottom-right-radius: 0;
+            }
+        }
     }
 }
 
@@ -43,6 +110,6 @@ $content-margin-s: $sidebar-width-s + 1.25%;
     width: $sidebar-width-l !important;
 }
 .togglecontent {
-    width: $content-width-s !important; 
+    width: $content-width-s !important;
     margin-left: $content-margin-l !important;
 }

@@ -34,9 +34,11 @@ $colors: (
             justify-content: center;
             a {
                 text-decoration: none;
-                color: map-get($colors, accent-dark);
+                color: map-get($colors, white);
+                // color: map-get($colors, accent-dark);
                 &:hover {
-                    color: map-get($colors, secondary);
+                    // color: map-get($colors, white);
+                    color: map-get($colors, accent-dark);
                 }
             }
             &:nth-child(1) {
