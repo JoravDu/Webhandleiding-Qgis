@@ -1,0 +1,30 @@
+.focuswrapper {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.focuswrapper .sidebar {
+  width: 5%;
+  height: 100%;
+  position: fixed;
+  background: #efeada;
+}
+
+.focuswrapper .content {
+  width: 93.75%;
+  height: auto;
+  margin-left: 6.25%;
+}
+
+.togglesidebar {
+  width: 10% !important;
+}
+
+.togglecontent {
+  width: 88.75% !important;
+  margin-left: 11.25% !important;
+}
+/*# sourceMappingURL=explain.css.map */

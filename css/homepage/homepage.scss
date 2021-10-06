@@ -72,3 +72,67 @@ $colors: (
         }
     }
 }
+
+.shape {
+    opacity: .6;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.diamond {
+    transform: rotate(45deg);
+}
+
+.diamond-one {
+    top: 68%;
+    left: 13%;
+    background: lightblue;
+}
+
+.circle {
+    border-radius: 100%;
+}
+
+.circle-one {
+    background: red;
+    right: 13%;
+    bottom: 11%;
+}
+
+.triangle-left {
+    position: absolute;
+    width: 0;
+	height: 0;
+    border-top: 25px solid transparent;
+	border-right: 50px solid map-get($colors, primary);
+	border-bottom: 25px solid transparent;
+}
+
+.triangle-one {
+    left: 15%;
+    top: 30%;
+}
+
+.triangle-two {
+    right: 32%;
+    top: 64%;
+    transform: rotate(90deg);
+}
+
+.line {
+    height: 5px;
+    width: 80px;
+    display: block;
+    background: map-get($colors, primary);
+    position: absolute;
+}
+
+.line-45 {
+    transform: rotate(22.75deg);
+    top: 20%;
+    right: 10%;
+}

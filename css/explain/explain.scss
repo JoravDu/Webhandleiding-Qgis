@@ -1,0 +1,41 @@
+$colors: (
+    primary: #8bbf41,
+    secondary: #ee7914,
+    accent-light: #efe64c,
+    accent-dark: #2d2d2a,
+    white: #efeada,
+);
+
+$sidebar-width-s: 5%;
+$sidebar-width-l: 10%;
+
+$content-width-l: 100% - ($sidebar-width-s + 1.25%);
+$content-width-s: 100% - ($sidebar-width-l + 1.25%);
+
+$content-margin-l: $sidebar-width-l + 1.25%;
+$content-margin-s: $sidebar-width-s + 1.25%;
+
+.focuswrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    .sidebar {
+        width: 5%;
+        height: 100%;
+        position: fixed;
+        background: map-get($colors, white);
+    }
+    .content {
+        width: $content-width-l;
+        height: auto;
+        margin-left: $content-margin-s;
+    }
+}
+
+.togglesidebar {
+    width: $sidebar-width-l !important;
+}
+.togglecontent {
+    width: $content-width-s !important; 
+    margin-left: $content-margin-l !important;
+}

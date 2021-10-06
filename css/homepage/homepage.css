@@ -76,4 +76,71 @@
   line-height: 1.75;
   text-align: justify;
 }
+
+.shape {
+  opacity: .6;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+.diamond {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.diamond-one {
+  top: 68%;
+  left: 13%;
+  background: lightblue;
+}
+
+.circle {
+  border-radius: 100%;
+}
+
+.circle-one {
+  background: red;
+  right: 13%;
+  bottom: 11%;
+}
+
+.triangle-left {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-right: 50px solid #8bbf41;
+  border-bottom: 25px solid transparent;
+}
+
+.triangle-one {
+  left: 15%;
+  top: 30%;
+}
+
+.triangle-two {
+  right: 32%;
+  top: 64%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.line {
+  height: 5px;
+  width: 80px;
+  display: block;
+  background: #8bbf41;
+  position: absolute;
+}
+
+.line-45 {
+  -webkit-transform: rotate(22.75deg);
+          transform: rotate(22.75deg);
+  top: 20%;
+  right: 10%;
+}
 /*# sourceMappingURL=homepage.css.map */
