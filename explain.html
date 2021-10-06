@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/global/menu/menu.css">
     <link rel="stylesheet" href="css/explain/explain.css">
 
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
     <title>Qgis handleiding voor HU minor</title>
 </head>
 
@@ -100,12 +103,24 @@
                 </button>
             </div>
 
-            <img src="https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd" alt="">
+            <img id="image"
+                src="https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd"
+                alt="">
 
         </main>
     </div>
 
     <script src="javascript/handletoggle.js"></script>
+    <script>
+        $(window).scroll(function () { 
+            var scroll = $(window).scrollTop(); 
+            if (scroll <= 60) { 
+                $(".sidebar").removeClass("sticky"); 
+            } 
+                else if (scroll >= 61) { $(".sidebar").addClass("sticky"); 
+            } 
+        })
+    </script>
 
 </body>
 

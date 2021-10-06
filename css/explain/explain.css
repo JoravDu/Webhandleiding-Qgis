@@ -11,7 +11,7 @@
   padding-right: 0;
   width: 5%;
   height: 100%;
-  position: fixed;
+  position: absolute;
   background: #fbfef9;
   border-right: 0.5px solid black;
 }
@@ -58,7 +58,7 @@
 .focuswrapper .content img {
   height: auto;
   width: 60%;
-  margin-left: auto;
+  margin-left: 16.875%;
   margin-right: auto;
 }
 
@@ -94,6 +94,10 @@
   border-bottom-right-radius: 0;
 }
 
+.toggleimage {
+  margin-left: 14.375% !important;
+}
+
 .togglesidebar {
   width: 10% !important;
 }
@@ -101,5 +105,10 @@
 .togglecontent {
   width: 88.75% !important;
   margin-left: 11.25% !important;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
 }
 /*# sourceMappingURL=explain.css.map */

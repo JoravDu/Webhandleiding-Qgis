@@ -19,6 +19,9 @@ $sidebar-width-l: 10%;
 $content-width-l: 100% - ($sidebar-width-s + 1.25%);
 $content-width-s: 100% - ($sidebar-width-l + 1.25%);
 
+$content-centre-outlining-s: ($content-width-s - 60%) / 2;
+$content-centre-outlining-l: ($content-width-l - 60%) / 2;
+
 $content-margin-l: $sidebar-width-l + 1.25%;
 $content-margin-s: $sidebar-width-s + 1.25%;
 
@@ -31,7 +34,7 @@ $content-margin-s: $sidebar-width-s + 1.25%;
         padding-right: 0;
         width: 5%;
         height: 100%;
-        position: fixed;
+        position: absolute;
         background: map-get($colors, white);
         border-right: 0.5px solid black;
         .button {
@@ -71,7 +74,7 @@ $content-margin-s: $sidebar-width-s + 1.25%;
         img {
             height: auto;
             width: 60%;
-            margin-left: auto;
+            margin-left: $content-centre-outlining-l;
             margin-right: auto;
         }
 
@@ -106,10 +109,19 @@ $content-margin-s: $sidebar-width-s + 1.25%;
     }
 }
 
+.toggleimage {
+    margin-left: $content-centre-outlining-s !important;
+}
+
 .togglesidebar {
     width: $sidebar-width-l !important;
 }
 .togglecontent {
     width: $content-width-s !important;
     margin-left: $content-margin-l !important;
+}
+
+.sticky {
+    position: fixed !important;
+    top: 0 !important;
 }
