@@ -30,6 +30,7 @@ $content-margin-s: $sidebar-width-s + 1.25%;
     height: auto;
     display: flex;
     .sidebar {
+        font-size: 14px;
         padding: 10px;
         padding-right: 0;
         width: 5%;
@@ -61,7 +62,11 @@ $content-margin-s: $sidebar-width-s + 1.25%;
                     padding: 7.5px 0;
                     a {
                         text-decoration: none;
-                        color: map-get($colors , secondary );
+                        color: map-get($colors, secondary);
+                    }
+                    .subsection {
+                        padding-left: 10px;
+                        list-style-type: none;
                     }
                 }
             }
@@ -109,6 +114,33 @@ $content-margin-s: $sidebar-width-s + 1.25%;
                 border-bottom-left-radius: 100px;
                 border-bottom-right-radius: 0;
             }
+            &::after {
+                display: block;
+                content: '';
+                height: 20px;
+                width: 100%;
+            }
+        }
+
+        .imagegroup {
+            width: 60%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left: $content-centre-outlining-l;
+            .group-image {
+                max-width: calc(50% - .5em);
+                max-height: calc(50% - .5em);
+                height: auto;
+                width: auto;
+                padding: 0.25em;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    margin-left: 0 !important;
+                }
+            }
         }
     }
 }
@@ -119,6 +151,7 @@ $content-margin-s: $sidebar-width-s + 1.25%;
 
 .togglesidebar {
     width: $sidebar-width-l !important;
+    font-size: 16px !important;
 }
 .togglecontent {
     width: $content-width-s !important;

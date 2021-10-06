@@ -7,6 +7,7 @@
 }
 
 .focuswrapper .sidebar {
+  font-size: 14px;
   padding: 10px;
   padding-right: 0;
   width: 5%;
@@ -49,6 +50,11 @@
 .focuswrapper .sidebar .sidebarcontent ul li a {
   text-decoration: none;
   color: #5941a9;
+}
+
+.focuswrapper .sidebar .sidebarcontent ul li .subsection {
+  padding-left: 10px;
+  list-style-type: none;
 }
 
 .focuswrapper .content {
@@ -99,12 +105,49 @@
   border-bottom-right-radius: 0;
 }
 
+.focuswrapper .content .downloadbox::after {
+  display: block;
+  content: '';
+  height: 20px;
+  width: 100%;
+}
+
+.focuswrapper .content .imagegroup {
+  width: 60%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 16.875%;
+}
+
+.focuswrapper .content .imagegroup .group-image {
+  max-width: calc(50% - .5em);
+  max-height: calc(50% - .5em);
+  height: auto;
+  width: auto;
+  padding: 0.25em;
+}
+
+.focuswrapper .content .imagegroup .group-image img {
+  height: 100%;
+  width: 100%;
+  margin-left: 0 !important;
+}
+
 .toggleimage {
   margin-left: 14.375% !important;
 }
 
 .togglesidebar {
   width: 10% !important;
+  font-size: 16px !important;
 }
 
 .togglecontent {

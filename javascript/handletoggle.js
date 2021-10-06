@@ -8,4 +8,7 @@ function handleToggle () {
     const imageSizing = document.getElementById("image");
     imageSizing.classList.toggle("toggleimage");
 
+    const imagegroupSizing = document.getElementById("imagegroup");
+    imagegroupSizing.classList.toggle("toggleimage");
+
 };
