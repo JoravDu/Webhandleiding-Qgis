@@ -1,9 +1,18 @@
+// $colors: (
+//     primary: #8bbf41,
+//     secondary: #ee7914,
+//     accent-light: #efe64c,
+//     // accent-dark: #2d2d2a,
+//     accent-dark: #1F2041,
+//     white: #efeada,
+// );
+
 $colors: (
     primary: #8bbf41,
-    secondary: #ee7914,
-    accent-light: #efe64c,
-    accent-dark: #2d2d2a,
-    white: #efeada,
+    secondary: #5941A9,
+    accent-light: #FEB95F,
+    accent-dark: #1F2041,
+    white: #fbfef9,
 );
 
 .menu {
@@ -25,9 +34,9 @@ $colors: (
             justify-content: center;
             a {
                 text-decoration: none;
-                color: map-get($colors, white);
+                color: map-get($colors, accent-dark);
                 &:hover {
-                    color: map-get($colors, accent-dark);
+                    color: map-get($colors, secondary);
                 }
             }
             &:nth-child(1) {

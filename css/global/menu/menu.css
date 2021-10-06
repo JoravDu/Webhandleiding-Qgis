@@ -32,11 +32,11 @@
 
 .menu .itemlist .listitem a {
   text-decoration: none;
-  color: #efeada;
+  color: #1F2041;
 }
 
 .menu .itemlist .listitem a:hover {
-  color: #2d2d2a;
+  color: #5941A9;
 }
 
 .menu .itemlist .listitem:nth-child(1) {

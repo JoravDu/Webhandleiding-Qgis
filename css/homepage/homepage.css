@@ -23,7 +23,7 @@
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  color: #efeada;
+  color: #fbfef9;
   mix-blend-mode: difference;
 }
 
@@ -55,7 +55,7 @@
 
 .content .hero .buttonbox .button a {
   text-decoration: none;
-  color: #efeada;
+  color: #fbfef9;
   text-transform: capitalize;
   font-size: 1.0025rem;
 }
