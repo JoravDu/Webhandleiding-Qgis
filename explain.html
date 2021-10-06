@@ -44,8 +44,12 @@
             </button>
             <div class="sidebarcontent">
                 <ul>
-                    <li>A</li>
-                    <li>B</li>
+                    <li>
+                        <a href="/explain.html#explain">Uitleg</a>
+                    </li>
+                    <li>
+                        <a href="/explain.html#download">Download</a>
+                    </li>
                     <li>C</li>
                     <li>D</li>
                     <li>E</li>
@@ -74,34 +78,44 @@
             </div>
         </div>
         <main class="content" id="content">
-            <h1>Uitleg</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cum dolorum fugit atque nobis beatae
-                est, quos reiciendis dolore cupiditate dolorem. Quae aliquid nisi natus quis odio corporis vero ea ipsum
-                nulla dolorum ut molestiae accusantium iusto ratione eum eos non sed, amet odit a dolorem nemo
-                exercitationem perferendis! Ab necessitatibus sed ea atque, delectus at eaque corporis dolor! Earum.</p>
+            <section id="explain">
+                <h1>Uitleg</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cum dolorum fugit atque nobis
+                    beatae
+                    est, quos reiciendis dolore cupiditate dolorem. Quae aliquid nisi natus quis odio corporis vero ea
+                    ipsum
+                    nulla dolorum ut molestiae accusantium iusto ratione eum eos non sed, amet odit a dolorem nemo
+                    exercitationem perferendis! Ab necessitatibus sed ea atque, delectus at eaque corporis dolor! Earum.
+                </p>
+            </section>
 
-            <h1>Download</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cum dolorum fugit atque nobis beatae
-                est, quos reiciendis dolore cupiditate dolorem. Quae aliquid nisi natus quis odio corporis vero ea ipsum
-                nulla dolorum ut molestiae accusantium iusto ratione eum eos non sed, amet odit a dolorem nemo
-                exercitationem perferendis! Ab necessitatibus sed ea atque, delectus at eaque corporis dolor! Earum.</p>
-            <div class="downloadbox">
-                <button class="download">
-                    <a href="https://qgis.org/downloads/QGIS-OSGeo4W-3.20.3-1.msi">
-                        Windows
-                    </a>
-                </button>
-                <button class="download none">
-                    <a href="https://qgis.org/downloads/macos/qgis-macos-pr.dmg">
-                        Mac
-                    </a>
-                </button>
-                <button class="download cornerright">
-                    <a target="_blank" href="https://qgis.org/en/site/forusers/alldownloads.html#linux">
-                        Linux
-                    </a>
-                </button>
-            </div>
+            <section id="download">
+                <h1>Download</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cum dolorum fugit atque nobis
+                    beatae
+                    est, quos reiciendis dolore cupiditate dolorem. Quae aliquid nisi natus quis odio corporis vero ea
+                    ipsum
+                    nulla dolorum ut molestiae accusantium iusto ratione eum eos non sed, amet odit a dolorem nemo
+                    exercitationem perferendis! Ab necessitatibus sed ea atque, delectus at eaque corporis dolor! Earum.
+                </p>
+                <div class="downloadbox">
+                    <button class="download">
+                        <a href="https://qgis.org/downloads/QGIS-OSGeo4W-3.20.3-1.msi">
+                            Windows
+                        </a>
+                    </button>
+                    <button class="download none">
+                        <a href="https://qgis.org/downloads/macos/qgis-macos-pr.dmg">
+                            Mac
+                        </a>
+                    </button>
+                    <button class="download cornerright">
+                        <a target="_blank" href="https://qgis.org/en/site/forusers/alldownloads.html#linux">
+                            Linux
+                        </a>
+                    </button>
+                </div>
+            </section>
 
             <img id="image"
                 src="https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd"
@@ -112,13 +126,14 @@
 
     <script src="javascript/handletoggle.js"></script>
     <script>
-        $(window).scroll(function () { 
-            var scroll = $(window).scrollTop(); 
-            if (scroll <= 60) { 
-                $(".sidebar").removeClass("sticky"); 
-            } 
-                else if (scroll >= 61) { $(".sidebar").addClass("sticky"); 
-            } 
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll <= 60) {
+                $(".sidebar").removeClass("sticky");
+            }
+            else if (scroll >= 61) {
+                $(".sidebar").addClass("sticky");
+            }
         })
     </script>
 

@@ -46,6 +46,11 @@
   padding: 7.5px 0;
 }
 
+.focuswrapper .sidebar .sidebarcontent ul li a {
+  text-decoration: none;
+  color: #5941a9;
+}
+
 .focuswrapper .content {
   text-align: justify;
   width: 93.75%;

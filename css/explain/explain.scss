@@ -59,6 +59,10 @@ $content-margin-s: $sidebar-width-s + 1.25%;
                 padding-left: 0;
                 li {
                     padding: 7.5px 0;
+                    a {
+                        text-decoration: none;
+                        color: map-get($colors , secondary );
+                    }
                 }
             }
         }
