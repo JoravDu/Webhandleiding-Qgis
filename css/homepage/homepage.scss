@@ -8,9 +8,9 @@
 
 $colors: (
     primary: #8bbf41,
-    secondary: #5941A9,
-    accent-light: #FEB95F,
-    accent-dark: #1F2041,
+    secondary: #5941a9,
+    accent-light: #feb95f,
+    accent-dark: #1f2041,
     white: #fbfef9,
 );
 
@@ -18,8 +18,7 @@ $colors: (
     width: 100%;
     height: auto;
     .hero {
-        // background-image: url("https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd");
-        background-image: url('https://objects.library.uu.nl/reader/img.php?obj=1874-351073&img=/72/46/38/72463859667832144848804572952047205750.jpg');
+        background-image: url("https://objects.library.uu.nl/reader/img.php?obj=1874-351073&img=/72/46/38/72463859667832144848804572952047205750.jpg");
         background-repeat: no-repeat;
         background-position: 0% 50%;
         background-size: cover;
@@ -38,9 +37,7 @@ $colors: (
             .xxl {
                 line-height: 1;
             }
-            // color: map-get($colors, accent-dark)
             color: map-get($colors, white);
-            // mix-blend-mode: difference;
         }
         .buttonbox {
             height: 100px;
@@ -63,6 +60,12 @@ $colors: (
                     text-transform: capitalize;
                     font-size: 1.0025rem;
                 }
+                &:hover {
+                    box-shadow: inset 3px 3px 5px rgb(66, 121, 45), inset -3px -3px 5px rgba(139, 191, 65, 1);
+                    a {
+                        color: lightgray;
+                    }
+                }
             }
         }
     }
@@ -82,67 +85,3 @@ $colors: (
         }
     }
 }
-
-// .shape {
-//     opacity: .6;
-// }
-
-// .square {
-//     width: 50px;
-//     height: 50px;
-//     position: absolute;
-// }
-
-// .diamond {
-//     transform: rotate(45deg);
-// }
-
-// .diamond-one {
-//     top: 68%;
-//     left: 13%;
-//     background: lightblue;
-// }
-
-// .circle {
-//     border-radius: 100%;
-// }
-
-// .circle-one {
-//     background: red;
-//     right: 13%;
-//     bottom: 11%;
-// }
-
-// .triangle-left {
-//     position: absolute;
-//     width: 0;
-// 	height: 0;
-//     border-top: 25px solid transparent;
-// 	border-right: 50px solid map-get($colors, primary);
-// 	border-bottom: 25px solid transparent;
-// }
-
-// .triangle-one {
-//     left: 15%;
-//     top: 30%;
-// }
-
-// .triangle-two {
-//     right: 32%;
-//     top: 64%;
-//     transform: rotate(90deg);
-// }
-
-// .line {
-//     height: 5px;
-//     width: 80px;
-//     display: block;
-//     background: map-get($colors, primary);
-//     position: absolute;
-// }
-
-// .line-45 {
-//     transform: rotate(22.75deg);
-//     top: 20%;
-//     right: 10%;
-// }

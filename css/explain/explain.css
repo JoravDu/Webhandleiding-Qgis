@@ -10,7 +10,7 @@
   font-size: 14px;
   padding: 10px;
   padding-right: 0;
-  width: 5%;
+  width: 5.5%;
   height: 100%;
   position: absolute;
   background: #fbfef9;
@@ -48,8 +48,9 @@
 }
 
 .focuswrapper .sidebar .sidebarcontent ul li a {
-  text-decoration: none;
-  color: #5941a9;
+  text-decoration: underline;
+  color: #1f2041;
+  font-weight: 550;
 }
 
 .focuswrapper .sidebar .sidebarcontent ul li .subsection {
@@ -59,9 +60,9 @@
 
 .focuswrapper .content {
   text-align: justify;
-  width: 93.75%;
+  width: 93.25%;
   height: auto;
-  margin-left: 6.25%;
+  margin-left: 6.75%;
   padding: 2.5%;
   padding-left: 1.25%;
 }
@@ -69,7 +70,7 @@
 .focuswrapper .content img {
   height: auto;
   width: 60%;
-  margin-left: 16.875%;
+  margin-left: 16.625%;
   margin-right: auto;
 }
 
@@ -107,38 +108,61 @@
 
 .focuswrapper .content .downloadbox::after {
   display: block;
-  content: '';
+  content: "";
   height: 20px;
   width: 100%;
 }
 
 .focuswrapper .content .imagegroup {
-  width: 60%;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  -ms-grid-rows: (50%)[2];
+      grid-template-rows: repeat(2, 50%);
+      grid-template-areas: "one two" "three four";
+  gap: 0.5em 0.5em;
+  width: calc(58.2% + 1em);
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: 16.875%;
+  margin-left: 16.625%;
+  margin-right: auto;
 }
 
-.focuswrapper .content .imagegroup .group-image {
-  max-width: calc(50% - .5em);
-  max-height: calc(50% - .5em);
-  height: auto;
-  width: auto;
-  padding: 0.25em;
-}
-
-.focuswrapper .content .imagegroup .group-image img {
-  height: 100%;
-  width: 100%;
+.focuswrapper .content .one img,
+.focuswrapper .content .two img,
+.focuswrapper .content .three img,
+.focuswrapper .content .four img {
   margin-left: 0 !important;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.focuswrapper .content .one {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+.focuswrapper .content .two {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+.focuswrapper .content .three {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: three;
+}
+
+.focuswrapper .content .four {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: four;
 }
 
 .toggleimage {
@@ -158,5 +182,11 @@
 .sticky {
   position: fixed !important;
   top: 0 !important;
+}
+
+.sticky .sidebarcontent {
+  margin-top: 50px;
+  overflow: scroll;
+  height: calc(100% - 60px) !important;
 }
 /*# sourceMappingURL=explain.css.map */

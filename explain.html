@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/global/global.css">
     <link rel="stylesheet" href="css/global/menu/menu.css">
     <link rel="stylesheet" href="css/explain/explain.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
@@ -24,13 +25,13 @@
                 <a href="/">Home</a>
             </li>
             <li class="listitem">
-                <a href="/">Leerdoelen</a>
+                <a href="/goals.html">Leerdoelen</a>
             </li>
             <li class="listitem">
-                <a href="/">Geschiedenis</a>
+                <a href="/history.html">Geschiedenis</a>
             </li>
             <li class="listitem">
-                <a href="/explain.html">Uitleg</a>
+                <a href="/explain.html" onclick="return false">Uitleg</a>
             </li>
         </ul>
     </nav>
@@ -130,19 +131,19 @@
                 alt="">
 
             <div class="imagegroup" id="imagegroup">
-                <div class="group-image">
+                <div class="one">
                     <img src="https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd"
                         alt="">
                 </div>
-                <div class="group-image">
+                <div class="two">
                     <img src="https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd"
                         alt="">
                 </div>
-                <div class="group-image">
+                <div class="three">
                     <img src="https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd"
                         alt="">
                 </div>
-                <div class="group-image">
+                <div class="four">
                     <img src="https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd"
                         alt="">
                 </div>
@@ -163,18 +164,11 @@
         </main>
     </div>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+
     <script src="javascript/handletoggle.js"></script>
-    <script>
-        $(window).scroll(function () {
-            var scroll = $(window).scrollTop();
-            if (scroll <= 60) {
-                $(".sidebar").removeClass("sticky");
-            }
-            else if (scroll >= 61) {
-                $(".sidebar").addClass("sticky");
-            }
-        })
-    </script>
+    <script src="javascript/scroll.js"></script>
+    <script src="javascript/stickysidebar.js"></script>
 
 </body>
 

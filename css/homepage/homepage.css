@@ -59,6 +59,15 @@
   font-size: 1.0025rem;
 }
 
+.content .hero .buttonbox .button:hover {
+  -webkit-box-shadow: inset 3px 3px 5px #42792d, inset -3px -3px 5px #8bbf41;
+          box-shadow: inset 3px 3px 5px #42792d, inset -3px -3px 5px #8bbf41;
+}
+
+.content .hero .buttonbox .button:hover a {
+  color: lightgray;
+}
+
 .content .intro {
   margin: 5vw 0;
   height: auto;
