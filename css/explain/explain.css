@@ -13,7 +13,7 @@
   width: 5.5%;
   height: 100%;
   position: absolute;
-  border-right: 0.5px solid black;
+  border-right: 0.5px solid #000;
 }
 
 .focuswrapper .sidebar .button {
@@ -27,9 +27,13 @@
 .focuswrapper .sidebar .button .bar {
   width: 30px;
   height: 4px;
-  background: black;
+  background: #000;
   margin: 5px;
   display: block;
+}
+
+.focuswrapper .sidebar .button:hover .bar {
+  background: #2d2d2a;
 }
 
 .focuswrapper .sidebar .sidebarcontent {
@@ -48,8 +52,12 @@
 
 .focuswrapper .sidebar .sidebarcontent ul li a {
   text-decoration: underline;
-  color: #484D47;
+  color: #000;
   font-weight: 550;
+}
+
+.focuswrapper .sidebar .sidebarcontent ul li a:hover {
+  color: #568259;
 }
 
 .focuswrapper .sidebar .sidebarcontent ul li .subsection {
@@ -64,6 +72,7 @@
   margin-left: 6.75%;
   padding: 2.5%;
   padding-left: 1.25%;
+  padding-top: 1.25%;
 }
 
 .focuswrapper .content img {
@@ -73,11 +82,118 @@
   margin-right: auto;
 }
 
-.focuswrapper .content .downloadbox {
+.focuswrapper .content section .text-oneimage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: auto;
+  width: 100%;
+}
+
+.focuswrapper .content section .text-oneimage .text {
+  max-width: 70%;
+  width: auto;
+  margin-right: 30px;
+}
+
+.focuswrapper .content section .text-oneimage .image-wrapper {
+  padding-top: 73.3px;
+  max-width: 30%;
+  height: auto;
+}
+
+.focuswrapper .content section .text-oneimage .image-wrapper img {
+  height: 100%;
+  width: 100%;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.focuswrapper .content section .text-imagecollage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: auto;
+  width: 100%;
+}
+
+.focuswrapper .content section .text-imagecollage .text {
+  max-width: 60%;
+  width: auto;
+  margin-right: 30px;
+}
+
+.focuswrapper .content section .text-imagecollage .image-wrapper {
+  padding-top: 73.3px;
+  max-width: 40%;
+  max-height: 500px;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  -ms-grid-rows: (50%)[2];
+      grid-template-rows: repeat(2, 50%);
+  gap: 0.5em 0.5em;
+      grid-template-areas: "one two" "three four";
+}
+
+.focuswrapper .content section .text-imagecollage .image-wrapper .one {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+.focuswrapper .content section .text-imagecollage .image-wrapper .two {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+.focuswrapper .content section .text-imagecollage .image-wrapper .three {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: three;
+}
+
+.focuswrapper .content section .text-imagecollage .image-wrapper .four {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: four;
+}
+
+.focuswrapper .content section .text-imagecollage .image-wrapper .one img,
+.focuswrapper .content section .text-imagecollage .image-wrapper .two img,
+.focuswrapper .content section .text-imagecollage .image-wrapper .three img,
+.focuswrapper .content section .text-imagecollage .image-wrapper .four img {
+  height: 100%;
+  width: 100%;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.focuswrapper .content section::after {
+  display: block;
+  content: "";
+  height: 20px;
+  width: 100%;
+}
+
+.focuswrapper .content section#download .downloadbox {
   margin-top: 25px;
 }
 
-.focuswrapper .content .downloadbox .download {
+.focuswrapper .content section#download .downloadbox .download {
   background: #568259;
   border: none;
   height: 50px;
@@ -88,7 +204,7 @@
   margin-right: 15px;
 }
 
-.focuswrapper .content .downloadbox .download a {
+.focuswrapper .content section#download .downloadbox .download a {
   padding: 20px;
   text-decoration: none;
   color: #fbfef9;
@@ -96,72 +212,13 @@
   font-size: 1.0025rem;
 }
 
-.focuswrapper .content .downloadbox .none {
+.focuswrapper .content section#download .downloadbox .none {
   border-bottom-left-radius: 100px;
 }
 
-.focuswrapper .content .downloadbox .cornerright {
+.focuswrapper .content section#download .downloadbox .cornerright {
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 0;
-}
-
-.focuswrapper .content .downloadbox::after {
-  display: block;
-  content: "";
-  height: 20px;
-  width: 100%;
-}
-
-.focuswrapper .content .imagegroup {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
-  -ms-grid-columns: (50%)[2];
-      grid-template-columns: repeat(2, 50%);
-  -ms-grid-rows: (50%)[2];
-      grid-template-rows: repeat(2, 50%);
-      grid-template-areas: "one two" "three four";
-  gap: 0.5em 0.5em;
-  width: calc(58.2% + 1em);
-  height: auto;
-  margin-left: 16.625%;
-  margin-right: auto;
-}
-
-.focuswrapper .content .one img,
-.focuswrapper .content .two img,
-.focuswrapper .content .three img,
-.focuswrapper .content .four img {
-  margin-left: 0 !important;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.focuswrapper .content .one {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: one;
-}
-
-.focuswrapper .content .two {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: two;
-}
-
-.focuswrapper .content .three {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: three;
-}
-
-.focuswrapper .content .four {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: four;
 }
 
 .toggleimage {

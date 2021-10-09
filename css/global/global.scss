@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"); // var
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 // $colors: (
@@ -17,12 +17,29 @@
 //     white: #fbfef9,
 // );
 
+// $colors: (
+//     primary: #7A938D,
+//     secondary: #6622CC,
+//     accent-light: #FDE8E9,
+//     accent-dark: #484D47,
+//     white: #fbfef9,
+// );
+
 $colors: (
-    primary: #7A938D,
-    secondary: #6622CC,
-    accent-light: #FDE8E9,
-    accent-dark: #484D47,
+    primary3: #7a938d,
+    primary1: #568259,
+    primary2: #e8e7e3,
+    text: #013220,
+    secondary: #6622cc,
+    accent-light: #fde8e9,
+    accent-dark: #484d47,
+    accent-dark2: #2d2d2a,
+    accent-light2: #feb95f,
     white: #fbfef9,
+);
+
+$colors-rgba: (
+    primary-07: rgba(86, 130, 89, 0.7),
 );
 
 $font-size: (
@@ -92,8 +109,7 @@ html {
     z-index: 999;
     border: none;
     outline: none;
-    // background-color: rgba(139, 191, 65, .7);
-    background-color: map-get($colors , primary );
+    background-color: map-get($colors-rgba , primary-07 );
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -102,5 +118,14 @@ html {
 }
 
 #myBtn:hover {
-    background-color: rgb(66, 121, 45);
+    background-color: map-get($colors , primary1 );
+}
+
+#after {
+    &::after {
+        height: 12px;
+        width: 100%;
+        content: '';
+        display: block;
+    }
 }

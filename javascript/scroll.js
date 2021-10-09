@@ -3,7 +3,7 @@ mybutton = document.getElementById("myBtn");
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 792 || document.documentElement.scrollTop > 792) {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
         mybutton.style.display = "block";
         $('myBtn').fadeIn();
     } else {

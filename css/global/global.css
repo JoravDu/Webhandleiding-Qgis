@@ -55,7 +55,7 @@ html {
   z-index: 999;
   border: none;
   outline: none;
-  background-color: #7A938D;
+  background-color: rgba(86, 130, 89, 0.7);
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -64,6 +64,13 @@ html {
 }
 
 #myBtn:hover {
-  background-color: #42792d;
+  background-color: #568259;
+}
+
+#after::after {
+  height: 12px;
+  width: 100%;
+  content: '';
+  display: block;
 }
 /*# sourceMappingURL=global.css.map */
