@@ -6,11 +6,24 @@
 //     white: #efeada,
 // );
 
+// $colors: (
+//     primary: #8bbf41,
+//     secondary: #5941a9,
+//     accent-light: #feb95f,
+//     accent-dark: #1f2041,
+//     white: #fbfef9,
+// );
+
 $colors: (
-    primary: #8bbf41,
-    secondary: #5941a9,
-    accent-light: #feb95f,
-    accent-dark: #1f2041,
+    // primary1: #7A938D,
+    primary1: #568259,
+    primary2: #e8e7e3,
+    text: #013220,
+    secondary: #6622CC,
+    accent-light: #FDE8E9,
+    accent-dark: #484D47,
+    accent-dark2: #2d2d2a,
+    accent-light2: #feb95f,
     white: #fbfef9,
 );
 
@@ -18,52 +31,64 @@ $colors: (
     width: 100%;
     height: auto;
     .hero {
-        background-image: url("https://objects.library.uu.nl/reader/img.php?obj=1874-351073&img=/72/46/38/72463859667832144848804572952047205750.jpg");
+        // background-image: 
+        // linear-gradient(
+        //     rgba(255, 255, 255, 0.5),
+        //     rgba(255, 255, 255, 0.5)
+        //   ),
+        // url("https://objects.library.uu.nl/reader/img.php?obj=1874-351073&img=/72/46/38/72463859667832144848804572952047205750.jpg");
+        background-image: 
+        linear-gradient(
+            rgba(251, 254, 249, 0.5),
+            rgba(251, 254, 249, 0.5)
+          ),
+        url("http://www.freekslangen.nl/reizen/utrecht/pics/Utrechtstad_1870.png");
         background-repeat: no-repeat;
         background-position: 0% 50%;
         background-size: cover;
         background-attachment: fixed;
-        width: 90%;
+        width: 95%;
         margin-left: auto;
         margin-right: auto;
         height: 40vw;
         margin-top: 2.5vw;
+
         .herotext {
             position: absolute;
             text-align: center;
+            text-transform: uppercase;
             top: 35%;
             left: 50%;
             transform: translate(-50%);
             .xxl {
                 line-height: 1;
             }
-            color: map-get($colors, white);
+            color: map-get($colors, accent-dark2);
         }
         .buttonbox {
             height: 100px;
-            width: 90%;
+            width: 95%;
             position: absolute;
             display: flex;
             top: 65.5%;
             justify-content: center;
             .button {
-                background: map-get($colors, primary);
+                background: map-get($colors, primary1);
                 border: none;
                 height: 50px;
                 width: 125px;
-                //lb rb ro lo
                 border-radius: 100px;
                 border-bottom-left-radius: 0;
                 a {
                     text-decoration: none;
                     color: map-get($colors, white);
-                    text-transform: capitalize;
+                    text-transform: uppercase;
                     font-size: 1.0025rem;
                 }
                 &:hover {
-                    box-shadow: inset 3px 3px 5px rgb(66, 121, 45), inset -3px -3px 5px rgba(139, 191, 65, 1);
+                    box-shadow: inset 3px 3px 5px rgb(65, 98, 67), inset -3px -3px 5px map-get($colors , primary1 );
                     a {
-                        color: lightgray;
+                        color: white;
                     }
                 }
             }
@@ -78,6 +103,7 @@ $colors: (
 
         h1 {
             line-height: 2;
+            text-align: center;
         }
         p {
             line-height: 1.75;

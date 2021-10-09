@@ -9,11 +9,19 @@
 //     white: #efeada,
 // );
 
+// $colors: (
+//     primary: #8bbf41,
+//     secondary: #5941A9,
+//     accent-light: #FEB95F,
+//     accent-dark: #1F2041,
+//     white: #fbfef9,
+// );
+
 $colors: (
-    primary: #8bbf41,
-    secondary: #5941A9,
-    accent-light: #FEB95F,
-    accent-dark: #1F2041,
+    primary: #7A938D,
+    secondary: #6622CC,
+    accent-light: #FDE8E9,
+    accent-dark: #484D47,
     white: #fbfef9,
 );
 
@@ -84,7 +92,8 @@ html {
     z-index: 999;
     border: none;
     outline: none;
-    background-color: rgba(139, 191, 65, .7);
+    // background-color: rgba(139, 191, 65, .7);
+    background-color: map-get($colors , primary );
     color: white;
     cursor: pointer;
     padding: 15px;

@@ -5,11 +5,25 @@
 //     accent-dark: #2d2d2a,
 //     white: #efeada,
 // );
+
+// $colors: (
+//     primary: #8bbf41,
+//     secondary: #5941a9,
+//     accent-light: #feb95f,
+//     accent-dark: #1f2041,
+//     white: #fbfef9,
+// );
+
 $colors: (
-    primary: #8bbf41,
-    secondary: #5941a9,
-    accent-light: #feb95f,
-    accent-dark: #1f2041,
+    primary3: #7A938D,
+    primary1: #568259,
+    primary2: #e8e7e3,
+    text: #013220,
+    secondary: #6622CC,
+    accent-light: #FDE8E9,
+    accent-dark: #484D47,
+    accent-dark2: #2d2d2a,
+    accent-light2: #feb95f,
     white: #fbfef9,
 );
 
@@ -36,8 +50,9 @@ $content-margin-s: $sidebar-width-s + 1.25%;
         width: $sidebar-width-s;
         height: 100%;
         position: absolute;
-        background: map-get($colors, white);
+        // background: map-get($colors, primary1);
         border-right: 0.5px solid black;
+        
         .button {
             position: absolute;
             border: none;
@@ -91,7 +106,7 @@ $content-margin-s: $sidebar-width-s + 1.25%;
         .downloadbox {
             margin-top: 25px;
             .download {
-                background: map-get($colors, primary);
+                background: map-get($colors, primary1);
                 border: none;
                 height: 50px;
                 width: auto;
@@ -170,7 +185,6 @@ $content-margin-s: $sidebar-width-s + 1.25%;
 
 .togglesidebar {
     width: $sidebar-width-l !important;
-    font-size: 16px !important;
 }
 .togglecontent {
     width: $content-width-s !important;

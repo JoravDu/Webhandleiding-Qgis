@@ -4,12 +4,13 @@
 }
 
 .content .hero {
-  background-image: url("https://objects.library.uu.nl/reader/img.php?obj=1874-351073&img=/72/46/38/72463859667832144848804572952047205750.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(251, 254, 249, 0.5)), to(rgba(251, 254, 249, 0.5))), url("http://www.freekslangen.nl/reizen/utrecht/pics/Utrechtstad_1870.png");
+  background-image: linear-gradient(rgba(251, 254, 249, 0.5), rgba(251, 254, 249, 0.5)), url("http://www.freekslangen.nl/reizen/utrecht/pics/Utrechtstad_1870.png");
   background-repeat: no-repeat;
   background-position: 0% 50%;
   background-size: cover;
   background-attachment: fixed;
-  width: 90%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   height: 40vw;
@@ -19,11 +20,12 @@
 .content .hero .herotext {
   position: absolute;
   text-align: center;
+  text-transform: uppercase;
   top: 35%;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  color: #fbfef9;
+  color: #2d2d2a;
 }
 
 .content .hero .herotext .xxl {
@@ -32,7 +34,7 @@
 
 .content .hero .buttonbox {
   height: 100px;
-  width: 90%;
+  width: 95%;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,7 +46,7 @@
 }
 
 .content .hero .buttonbox .button {
-  background: #8bbf41;
+  background: #568259;
   border: none;
   height: 50px;
   width: 125px;
@@ -55,17 +57,17 @@
 .content .hero .buttonbox .button a {
   text-decoration: none;
   color: #fbfef9;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-size: 1.0025rem;
 }
 
 .content .hero .buttonbox .button:hover {
-  -webkit-box-shadow: inset 3px 3px 5px #42792d, inset -3px -3px 5px #8bbf41;
-          box-shadow: inset 3px 3px 5px #42792d, inset -3px -3px 5px #8bbf41;
+  -webkit-box-shadow: inset 3px 3px 5px #416243, inset -3px -3px 5px #568259;
+          box-shadow: inset 3px 3px 5px #416243, inset -3px -3px 5px #568259;
 }
 
 .content .hero .buttonbox .button:hover a {
-  color: lightgray;
+  color: white;
 }
 
 .content .intro {
@@ -78,6 +80,7 @@
 
 .content .intro h1 {
   line-height: 2;
+  text-align: center;
 }
 
 .content .intro p {
