@@ -82,6 +82,18 @@
   margin-right: auto;
 }
 
+.focuswrapper .content section .text-full {
+  max-width: 100%;
+  width: auto;
+}
+
+.focuswrapper .content section .text-full::after {
+  display: block;
+  content: "";
+  height: 20px;
+  width: 100%;
+}
+
 .focuswrapper .content section .text-oneimage {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,14 +112,28 @@
   margin-right: 30px;
 }
 
+.focuswrapper .content section .text-oneimage .text h3::before {
+  display: block;
+  content: "";
+  height: 20px;
+  width: 100%;
+}
+
+.focuswrapper .content section .text-oneimage .text h3::after {
+  display: block;
+  content: "";
+  height: 10px;
+  width: 100%;
+}
+
 .focuswrapper .content section .text-oneimage .image-wrapper {
   padding-top: 73.3px;
   max-width: 30%;
+  max-height: 30%;
   height: auto;
 }
 
 .focuswrapper .content section .text-oneimage .image-wrapper img {
-  height: 100%;
   width: 100%;
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -129,6 +155,20 @@
   max-width: 60%;
   width: auto;
   margin-right: 30px;
+}
+
+.focuswrapper .content section .text-imagecollage .text h3::before {
+  display: block;
+  content: "";
+  height: 20px;
+  width: 100%;
+}
+
+.focuswrapper .content section .text-imagecollage .text h3::after {
+  display: block;
+  content: "";
+  height: 10px;
+  width: 100%;
 }
 
 .focuswrapper .content section .text-imagecollage .image-wrapper {
@@ -177,7 +217,7 @@
 .focuswrapper .content section .text-imagecollage .image-wrapper .three img,
 .focuswrapper .content section .text-imagecollage .image-wrapper .four img {
   height: 100%;
-  width: 100%;
+  width: 100% !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
