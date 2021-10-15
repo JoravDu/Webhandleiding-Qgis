@@ -7,7 +7,33 @@
 
 .focus-wrapper .sidebar {
   width: 7.5%;
-  border-right: 1px solid black;
+  border-right: 0.5px solid #000;
+}
+
+.focus-wrapper .sidebar ul {
+  list-style: none;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.focus-wrapper .sidebar ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 15px;
+}
+
+.focus-wrapper .sidebar ul li ul {
+  padding: 0;
+  padding-left: 10px;
+}
+
+.focus-wrapper .sidebar ul li a {
+  text-decoration: underline;
+  color: #000;
+}
+
+.focus-wrapper .sidebar ul li a:hover {
+  color: #568259;
 }
 
 .focus-wrapper .content {

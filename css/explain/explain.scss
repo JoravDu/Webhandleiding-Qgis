@@ -12,16 +12,16 @@ $carousel-width: $content-width * 0.7;
 $carousel-margin: ($content-width - $carousel-width) / 2;
 
 $colors: (
-    // primary1: #7A938D,
-    primary1: #568259,
-    primary2: #e8e7e3,
-    text: #013220,
-    secondary: #6622CC,
-    accent-light: #FDE8E9,
-    accent-dark: #484D47,
-    accent-dark2: #2d2d2a,
-    accent-light2: #feb95f,
-    white: #fbfef9,
+  // primary1: #7A938D,
+  primary1: #568259,
+  primary2: #e8e7e3,
+  text: #013220,
+  secondary: #6622CC,
+  accent-light: #FDE8E9,
+  accent-dark: #484D47,
+  accent-dark2: #2d2d2a,
+  accent-light2: #feb95f,
+  white: #fbfef9
 );
 
 .focus-wrapper {
@@ -29,7 +29,28 @@ $colors: (
   display: flex;
   .sidebar {
     width: $sidebar-width;
-    border-right: 1px solid black;
+    border-right: 0.5px solid #000;
+    ul {
+      list-style: none;
+      padding-left: 10px;
+      padding-top: 10px;
+      li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 15px;
+        ul {
+          padding: 0;
+          padding-left: 10px;
+        }
+        a {
+          text-decoration: underline;
+          color: #000;
+          &:hover {
+            color: map-get($colors, primary1)
+          }
+        }
+      }
+    }
   }
 
   .content {
@@ -44,10 +65,10 @@ $colors: (
   }
 }
 
-code{
-    background-color: map-get($colors , primary2 );
-    border-radius: 3px;
-    padding: 2px;
+code {
+  background-color: map-get($colors, primary2);
+  border-radius: 3px;
+  padding: 2px;
 }
 
 .sticky {
@@ -88,7 +109,6 @@ code{
     display: block;
     width: auto;
     height: $image-beforeafter-distance;
-
   }
 }
 
