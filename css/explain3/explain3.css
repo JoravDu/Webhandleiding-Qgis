@@ -1,0 +1,287 @@
+.focuswrapper {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.focuswrapper .sidebar {
+  font-size: 14px;
+  padding: 10px;
+  padding-right: 0;
+  width: 6.5%;
+  height: 100%;
+  position: absolute;
+  border-right: 0.5px solid #000;
+}
+
+.focuswrapper .sidebar .button {
+  position: absolute;
+  border: none;
+  background: transparent;
+  height: 40px;
+  width: 40px;
+}
+
+.focuswrapper .sidebar .button .bar {
+  width: 30px;
+  height: 4px;
+  background: #000;
+  margin: 5px;
+  display: block;
+}
+
+.focuswrapper .sidebar .button:hover .bar {
+  background: #2d2d2a;
+}
+
+.focuswrapper .sidebar .sidebarcontent {
+  margin-top: 50px;
+  overflow: scroll;
+  height: calc(90% - 60px);
+}
+
+.focuswrapper .sidebar .sidebarcontent ul {
+  padding-left: 0;
+}
+
+.focuswrapper .sidebar .sidebarcontent ul li {
+  padding: 7.5px 0;
+}
+
+.focuswrapper .sidebar .sidebarcontent ul li a {
+  text-decoration: underline;
+  color: #000;
+  font-weight: 550;
+}
+
+.focuswrapper .sidebar .sidebarcontent ul li a:hover {
+  color: #568259;
+}
+
+.focuswrapper .sidebar .sidebarcontent ul li .subsection {
+  padding-left: 10px;
+  list-style-type: none;
+}
+
+.focuswrapper .content {
+  text-align: justify;
+  width: 92.25%;
+  height: auto;
+  margin-left: 7.75%;
+  padding: 2.5%;
+  padding-left: 1.25%;
+  padding-top: 1.25%;
+}
+
+.focuswrapper .content img {
+  height: auto;
+  width: 60%;
+  margin-left: 16.125%;
+  margin-right: auto;
+}
+
+.focuswrapper .content section .text-full {
+  max-width: 100%;
+  width: auto;
+}
+
+.focuswrapper .content section .text-full::after {
+  display: block;
+  content: "";
+  height: 20px;
+  width: 100%;
+}
+
+.focuswrapper .content section .text-oneimage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: auto;
+  width: 100%;
+}
+
+.focuswrapper .content section .text-oneimage .text {
+  max-width: 70%;
+  width: auto;
+  margin-right: 30px;
+}
+
+.focuswrapper .content section .text-oneimage .text h3::before {
+  display: block;
+  content: "";
+  height: 20px;
+  width: 100%;
+}
+
+.focuswrapper .content section .text-oneimage .text h3::after {
+  display: block;
+  content: "";
+  height: 10px;
+  width: 100%;
+}
+
+.focuswrapper .content section .text-oneimage .image-wrapper {
+  padding-top: 73.3px;
+  max-width: 30%;
+  max-height: 30%;
+  height: auto;
+}
+
+.focuswrapper .content section .text-oneimage .image-wrapper img {
+  width: 100%;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.focuswrapper .content section .text-imagecollage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: auto;
+  width: 100%;
+}
+
+.focuswrapper .content section .text-imagecollage .text {
+  max-width: 60%;
+  width: auto;
+  margin-right: 30px;
+}
+
+.focuswrapper .content section .text-imagecollage .text h3::before {
+  display: block;
+  content: "";
+  height: 20px;
+  width: 100%;
+}
+
+.focuswrapper .content section .text-imagecollage .text h3::after {
+  display: block;
+  content: "";
+  height: 10px;
+  width: 100%;
+}
+
+.focuswrapper .content section .text-imagecollage .image-wrapper {
+  padding-top: 73.3px;
+  max-width: 40%;
+  max-height: 500px;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  -ms-grid-rows: (50%)[2];
+      grid-template-rows: repeat(2, 50%);
+  gap: 0.5em 0.5em;
+      grid-template-areas: "one two" "three four";
+}
+
+.focuswrapper .content section .text-imagecollage .image-wrapper .one {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+.focuswrapper .content section .text-imagecollage .image-wrapper .two {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+.focuswrapper .content section .text-imagecollage .image-wrapper .three {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: three;
+}
+
+.focuswrapper .content section .text-imagecollage .image-wrapper .four {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: four;
+}
+
+.focuswrapper .content section .text-imagecollage .image-wrapper .one img,
+.focuswrapper .content section .text-imagecollage .image-wrapper .two img,
+.focuswrapper .content section .text-imagecollage .image-wrapper .three img,
+.focuswrapper .content section .text-imagecollage .image-wrapper .four img {
+  height: 100%;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.focuswrapper .content section::after {
+  display: block;
+  content: "";
+  height: 20px;
+  width: 100%;
+}
+
+.focuswrapper .content section#download .downloadbox {
+  margin-top: 25px;
+}
+
+.focuswrapper .content section#download .downloadbox .download {
+  background: #568259;
+  border: none;
+  height: 50px;
+  width: auto;
+  min-width: 90px;
+  border-radius: 100px;
+  border-bottom-left-radius: 0;
+  margin-right: 15px;
+}
+
+.focuswrapper .content section#download .downloadbox .download a {
+  padding: 20px;
+  text-decoration: none;
+  color: #fbfef9;
+  text-transform: capitalize;
+  font-size: 1.0025rem;
+}
+
+.focuswrapper .content section#download .downloadbox .none {
+  border-bottom-left-radius: 100px;
+}
+
+.focuswrapper .content section#download .downloadbox .cornerright {
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 0;
+}
+
+.toggleimage {
+  margin-left: 14.375% !important;
+}
+
+.togglesidebar {
+  width: 10% !important;
+}
+
+.togglecontent {
+  width: 88.75% !important;
+  margin-left: 11.25% !important;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+}
+
+.sticky .sidebarcontent {
+  margin-top: 50px;
+  overflow: scroll;
+  height: calc(100% - 60px) !important;
+}
+/*# sourceMappingURL=explain3.css.map */

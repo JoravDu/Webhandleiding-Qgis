@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/global/global.css">
-    <link rel="stylesheet" href="css/global/menu/menu.css">
-    <link rel="stylesheet" href="css/explain/explain.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
-    <title>Qgis handleiding voor HU minor</title>
+    <link rel="stylesheet" href="css/global/global.css">
+    <link rel="stylesheet" href="css/global/menu/menu.css">
+    <link rel="stylesheet" href="css/explain/explain.css">
+
+    <title>Uitleg</title>
 </head>
 
 <body>
@@ -36,303 +35,179 @@
         </ul>
     </nav>
 
-    <div class="focuswrapper">
-        <div class="sidebar" id="sidebar">
-
-            <button class="button" onclick="handleToggle()">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <div class="sidebarcontent">
-                <ul>
-                    <li>
-                        <a href="/explain.html#explain">Uitleg</a>
-                    </li>
-                    <li>
-                        <a href="/explain.html#download">Download</a>
-                    </li>
-                    <li>
-                        <a href="/explain.html#basics">Basis</a>
-                        <ul class="subsection">
-                            <li class="sub">A</li>
-                            <li class="sub">B</li>
-                            <li class="sub">C</li>
-                            <li class="sub">D</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="/explain.html#plugin">Plugins</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-        <main class="content" id="content">
-            <section id="explain">
-                <h1>Uitleg</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cum dolorum fugit atque nobis
-                    beatae
-                    est, quos reiciendis dolore cupiditate dolorem. Quae aliquid nisi natus quis odio corporis vero ea
-                    ipsum
-                    nulla dolorum ut molestiae accusantium iusto ratione eum eos non sed, amet odit a dolorem nemo
-                    exercitationem perferendis! Ab necessitatibus sed ea atque, delectus at eaque corporis dolor! Earum.
-                </p>
-            </section>
-
-            <section id="download">
-                <h1>Download</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cum dolorum fugit atque nobis
-                    beatae
-                    est, quos reiciendis dolore cupiditate dolorem. Quae aliquid nisi natus quis odio corporis vero ea
-                    ipsum
-                    nulla dolorum ut molestiae accusantium iusto ratione eum eos non sed, amet odit a dolorem nemo
-                    exercitationem perferendis! Ab necessitatibus sed ea atque, delectus at eaque corporis dolor! Earum.
-                </p>
-                <div class="downloadbox">
-                    <button class="download">
-                        <a href="https://qgis.org/downloads/QGIS-OSGeo4W-3.20.3-1.msi">
-                            Windows
-                        </a>
-                    </button>
-                    <button class="download none">
-                        <a href="https://qgis.org/downloads/macos/qgis-macos-pr.dmg">
-                            Mac
-                        </a>
-                    </button>
-                    <button class="download cornerright">
-                        <a target="_blank" href="https://qgis.org/en/site/forusers/alldownloads.html#linux">
-                            Linux
-                        </a>
-                    </button>
-                </div>
-            </section>
-
-
-            <section id="basics">
-                <div class="text-oneimage">
-                    <div class="text">
-                        <h1>Basis</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quasi exercitationem laboriosam
-                            temporibus dicta. Accusantium dicta perspiciatis natus architecto quis eos nihil odit.
-                            Recusandae
-                            animi vitae ea. Sed harum id fugit ad fugiat perferendis omnis nobis aut veritatis maiores,
-                            dolorem
-                            voluptatum temporibus quo amet, expedita corporis eos tempora impedit at, deleniti placeat
-                            neque
-                            ducimus nam. Aliquid nemo maiores, temporibus voluptates voluptas quaerat qui, reprehenderit
-                            tenetur
-                            enim cum excepturi atque incidunt officiis magni! Illum ea veniam in tempora eius earum
-                            sunt?
-                        </p>
-                    </div>
-                    <div class="image-wrapper">
-                        <img loading="lazy" src="https://i.redd.it/wovue4hkgcs71.jpg" alt="">
-                    </div>
-                </div>
-            </section>
-
-            <img loading="lazy" id="image" src="https://i.redd.it/wovue4hkgcs71.jpg" alt="">
-
-            <section id="plugin">
-                <div class="text-full">
-                    <h1>
-                        Plugins
-                    </h1>
-                    <p>
-                        Qgis is een handig programma, maar niet alles is mogelijk met de basistools die Qgis biedt.
-                        Hiervoor kan je kleine, handige programmaatjes downloaden en toevoegen aan het programma. Deze
-                        worden plugins genoemd. Deze plugins voegen iets toe aan bepaalde functies of voegen volledig
-                        nieuwe functies toe aan Qgis. Enkele van deze plugins worden hieronder toegelicht.
-                    </p>
-                </div>
-                <div class="text-imagecollage">
-                    <div class="text">
-                        <h2>
-                            PDOK
-                        </h2>
-                        <p>
-                            Publieke Dienstverlening Op de Kaart (PDOK) is een platform voor het aanbieden van
-                            geografische datasets van verschillende Nederlandse overheden. Dit zijn actuele en
-                            betrouwbare gegevens en kunnen gebruikt worden door zowel individuen als bedrijven. PDOK
-                            stelt digitale geo-informatie als dataservices en bestanden beschikbaar. De PDOK diensten
-                            zijn gebaseerd op open data en daarom voor iedereen vrij beschikbaar.
-                        </p>
-                        <p>
-                            Dit alles wordt aangeboden via de PDOK plug-in in Qgis. Deze plugin bestaat uit twee
-                            verschillende
-                            onderdelen:
-                        </p>
-                        <h3>Locatieserver</h3>
-                        <p>
-                            Met de locatieserver plugin kan je invullen waar je naartoe wil en de plugin brengt je
-                            scherm/canvas daar dan heen. Je kan zoeken op specifieke plaatsen, zoals Utrecht
-                            of Amsterdam, maar ook zoeken op een adres, zoals: Heidelberglaan 15, Utrecht.
-                        </p>
-                        <h3>PDOK Services</h3>
-                        <p>
-                            De services plugin biedt een groot scala aan verschillende openbare datasets, ook
-                            wel Open Data genoemd. Al deze data kan en mag gratis en voor niets gebruikt
-                            worden en wordt aangeboden door de Overheid of overheidsinstanties. Datasets die aangeboden
-                            worden zijn onder meer; luchtfoto’s, topografische achtergrondkaarten, natura2000-kaart en
-                            de AHN (Algemeen Hoogtebestand Nederland).
-                        </p>
-                    </div>
-                    <div class="image-wrapper" style="padding-top: 0 !important;">
-                        <div class="one">
-                            <img loading="lazy"
-                                src="https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd"
-                                alt="">
-                        </div>
-                        <div class="two">
-                            <img loading="lazy"
-                                src="https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd"
-                                alt="">
-                        </div>
-                        <div class="three">
-                            <img loading="lazy"
-                                src="https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd"
-                                alt="">
-                        </div>
-                        <div class="four">
-                            <img loading="lazy"
-                                src="https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd"
-                                alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="text-oneimage">
-                    <div class="text">
-                        <h3>
-                            GeoCoding
-                        </h3>
-                        <p>
-                            GeoCoding
-                            De GeoCoding plugin is een handige plugin voor mensen die wél een adres hebben, maar de
-                            coördinaten niet weten van dit adres. Om dit te achterhalen moet er gegeocodeerd worden, of
-                            in
-                            het Engels: GeoCoding. Bij GeoCoding kan er een adres ingevoerd worden in een soort
-                            zoekmachine
-                            en zoekt het programma uit op welke coördinaten dit adres zich dan bevindt.
-                        </p>
-                        <p>
-                            De plugin biedt twee mogelijkheden om te geocoderen: invullen van een adres en het klikken
-                            om de
-                            kaart om een adres te verkrijgen (zonder coördinaten).
-                        </p>
-                        <h3>
-                            Lat Lon Tools
-                        </h3>
-                        <p>
-                            Met de Lat Lon Tools-plugin heb je veel verschillende manieren om allerlei verschillende
-                            soorten “coördinaten” te verkrijgen. Het is mogelijk om coördinaten te kopiëren door
-                            simpelweg op de kaart te klikken (hiermee krijg je WGS84 coördinaten). Het is mogelijk om te
-                            zoomen naar de ingevoerde coördinaten. Ook is het mogelijk om het canvas extent (waar is de
-                            gebruiker op de kaart of waar bevindt de data zich op de kaart) te verkrijgen, dit kan
-                            handig zijn om te gebruiken in externe programma’s of tools, zoals LeafletJS of OpenLayers.
-                            Daarnaast kunnen alle soorten coördinaten verkregen worden door het venster te openen van de
-                            plugin. Hier krijg je onder meer de coördinaten van het project CRS, een gekozen CRS, maar
-                            ook WGS84 coördinaten.
-                        </p>
-                    </div>
-                    <div class="image-wrapper">
-                        <img loading="lazy"
-                            src="https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd"
-                            alt="">
-                    </div>
-                </div>
-                <!-- <div class="text-imagecollage">
-                    <div class="text">
-                        <h1>Plugin</h1>
-                        <p id="after">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quasi exercitationem laboriosam
-                            temporibus dicta. Accusantium dicta perspiciatis natus architecto quis eos nihil odit.
-                            Recusandae
-                            animi vitae ea. Sed harum id fugit ad fugiat perferendis omnis nobis aut veritatis maiores,
-                            dolorem
-                            voluptatum temporibus quo amet, expedita corporis eos tempora impedit at, deleniti placeat
-                            neque
-                            ducimus nam. Aliquid nemo maiores, temporibus voluptates voluptas quaerat qui, reprehenderit
-                            tenetur
-                            enim cum excepturi atque incidunt officiis magni! Illum ea veniam in tempora eius earum
-                            sunt?
-                        </p>
-                        <h2>PDOK</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quasi exercitationem laboriosam
-                            temporibus dicta. Accusantium dicta perspiciatis natus architecto quis eos nihil odit.
-                            Recusandae
-                            animi vitae ea. Sed harum id fugit ad fugiat perferendis omnis nobis aut veritatis maiores,
-                            dolorem
-                            voluptatum temporibus quo amet, expedita corporis eos tempora impedit at, deleniti placeat
-                            neque
-                            ducimus nam. Aliquid nemo maiores, temporibus voluptates voluptas quaerat qui, reprehenderit
-                            tenetur
-                            enim cum excepturi atque incidunt officiis magni! Illum ea veniam in tempora eius earum
-                            sunt?
-                        </p>
-
-                    </div>
-                    <div class="image-wrapper">
-                        <div class="one">
-                            <img loading="lazy"
-                                src="https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd"
-                                alt="">
-                        </div>
-                        <div class="two">
-                            <img loading="lazy"
-                                src="https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd"
-                                alt="">
-                        </div>
-                        <div class="three">
-                            <img loading="lazy"
-                                src="https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd"
-                                alt="">
-                        </div>
-                        <div class="four">
-                            <img loading="lazy"
-                                src="https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd"
-                                alt="">
-                        </div>
-                    </div>
-                </div> -->
-            </section>
-
+    <main class="focus-wrapper">
+        <nav class="sidebar">
+            <ul>
+                <li>
+                    <a href="explain2.html#intro">Introductie</a>
+                </li>
+                <li>
+                    <a href="explain2.html#explain">Uitleg</a>
+                </li>
+                <li>C</li>
+                <li>D</li>
+            </ul>
+        </nav>
+        <main class="content">
+            
         </main>
-    </div>
+    </main>
 
-    <!-- <iframe src="https://giphy.com/embed/orVa44Oav5WoF1LVOE" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/loop-endless-orVa44Oav5WoF1LVOE">via GIPHY</a></p> -->
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll <= 60) {
+                $(".sidebar").removeClass("sticky");
+            }
+            else if (scroll >= 61) {
+                $(".sidebar").addClass("sticky");
+            }
+        })
+    </script>
 
-    <script src="javascript/handletoggle.js"></script>
-    <script src="javascript/scroll.js"></script>
-    <script src="javascript/stickysidebar.js"></script>
+    <script>
+        var slidePosition = 1;
+        SlideShow(slidePosition);
+
+        // forward/Back controls
+        function plusSlides(n) {
+            SlideShow(slidePosition += n);
+        }
+
+        //  images controls
+        function currentSlide(n) {
+            SlideShow(slidePosition = n);
+        }
+
+        function SlideShow(n) {
+            var i;
+            var slides = document.getElementsByClassName("Containers");
+            var circles = document.getElementsByClassName("dots");
+            if (n > slides.length) { slidePosition = 1 }
+            if (n < 1) { slidePosition = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < circles.length; i++) {
+                circles[i].className = circles[i].className.replace(" enable", "");
+            }
+            slides[slidePosition - 1].style.display = "block";
+            circles[slidePosition - 1].className += " enable";
+        }
+    </script>
 
 </body>
 
 </html>
 
-<!-- <img loading="lazy" id="image"
-                src="https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd"
-                alt="">
-
-            <div class="imagegroup" id="imagegroup">
-                <div class="one">
-                    <img loading="lazy" src="https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd"
-                        alt="">
-                </div>
-                <div class="two">
-                    <img loading="lazy" src="https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd"
-                        alt="">
-                </div>
-                <div class="three">
-                    <img loading="lazy" src="https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd"
-                        alt="">
-                </div>
-                <div class="four">
-                    <img loading="lazy" src="https://preview.redd.it/qkq8hh5nxdr71.jpg?width=960&crop=smart&auto=webp&s=9bbdb4a0d4b9b4a0aa77ce41065fb71fc22895dd"
-                        alt="">
-                </div>
-            </div> -->
+<!-- <section id="intro">
+    <h1>Uitleg</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nam quibusdam optio vel deleniti,
+        debitis
+        consequatur ipsam, nihil veniam quia ipsa adipisci consectetur consequuntur eos quaerat praesentium
+        quasi itaque totam voluptas amet ab sed doloremque illo! Suscipit aliquid aperiam accusantium harum
+        repudiandae perferendis vero, eaque tempora, totam quia quisquam doloremque debitis sit officiis
+        nisi
+        quaerat repellat asperiores doloribus, modi excepturi.
+    </p>
+    <div class="image-alone">
+        <img loading="lazy" src="https://i.redd.it/wovue4hkgcs71.jpg" alt="">
+    </div>
+</section>
+<section id="intro">
+    <h1>Blabla</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nam quibusdam optio vel deleniti,
+        debitis
+        consequatur ipsam, nihil veniam quia ipsa adipisci consectetur consequuntur eos quaerat praesentium
+        quasi itaque totam voluptas amet ab sed doloremque illo! Suscipit aliquid aperiam accusantium harum
+        repudiandae perferendis vero, eaque tempora, totam quia quisquam doloremque debitis sit officiis
+        nisi
+        quaerat repellat asperiores doloribus, modi excepturi.
+    </p>
+    <div class="image-wrapper image-middle">
+        <img loading="lazy" src="https://i.redd.it/wovue4hkgcs71.jpg" alt="">
+    </div>
+</section>
+<section id="explain">
+    <div class="slideshow-container fade">
+        <div class="Containers">
+            <div class="MessageInfo">1 / 3</div>
+            <img src="https://i.redd.it/wovue4hkgcs71.jpg" style="width:100%">
+        </div>
+        <div class="Containers">
+            <div class="MessageInfo">2 / 3</div>
+            <img loading="lazy" src="https://preview.redd.it/8wd34o9qiit71.jpg?width=960&crop=smart&auto=webp&s=f1422c28ca51791cf098c4a5898db17cf529ceea" style="width:100%">
+        </div>
+        <div class="Containers">
+            <div class="MessageInfo">3 / 3</div>
+            <img loading="lazy" src="https://i.redd.it/wovue4hkgcs71.jpg" style="width:100%">
+        </div>
+        <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dots" onclick="currentSlide(1)"></span>
+        <span class="dots" onclick="currentSlide(2)"></span>
+        <span class="dots" onclick="currentSlide(3)"></span>
+    </div>
+</section>
+<h1>Uitleg</h1>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nam quibusdam optio vel deleniti, debitis
+    consequatur ipsam, nihil veniam quia ipsa adipisci consectetur consequuntur eos quaerat praesentium
+    quasi itaque totam voluptas amet ab sed doloremque illo! Suscipit aliquid aperiam accusantium harum
+    repudiandae perferendis vero, eaque tempora, totam quia quisquam doloremque debitis sit officiis nisi
+    quaerat repellat asperiores doloribus, modi excepturi.
+</p>
+<h1>Uitleg</h1>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nam quibusdam optio vel deleniti, debitis
+    consequatur ipsam, nihil veniam quia ipsa adipisci consectetur consequuntur eos quaerat praesentium
+    quasi itaque totam voluptas amet ab sed doloremque illo! Suscipit aliquid aperiam accusantium harum
+    repudiandae perferendis vero, eaque tempora, totam quia quisquam doloremque debitis sit officiis nisi
+    quaerat repellat asperiores doloribus, modi excepturi.
+</p>
+<h1>Uitleg</h1>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nam quibusdam optio vel deleniti, debitis
+    consequatur ipsam, nihil veniam quia ipsa adipisci consectetur consequuntur eos quaerat praesentium
+    quasi itaque totam voluptas amet ab sed doloremque illo! Suscipit aliquid aperiam accusantium harum
+    repudiandae perferendis vero, eaque tempora, totam quia quisquam doloremque debitis sit officiis nisi
+    quaerat repellat asperiores doloribus, modi excepturi.
+</p>
+<h1>Uitleg</h1>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nam quibusdam optio vel deleniti, debitis
+    consequatur ipsam, nihil veniam quia ipsa adipisci consectetur consequuntur eos quaerat praesentium
+    quasi itaque totam voluptas amet ab sed doloremque illo! Suscipit aliquid aperiam accusantium harum
+    repudiandae perferendis vero, eaque tempora, totam quia quisquam doloremque debitis sit officiis nisi
+    quaerat repellat asperiores doloribus, modi excepturi.
+</p>
+<h1>Uitleg</h1>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nam quibusdam optio vel deleniti, debitis
+    consequatur ipsam, nihil veniam quia ipsa adipisci consectetur consequuntur eos quaerat praesentium
+    quasi itaque totam voluptas amet ab sed doloremque illo! Suscipit aliquid aperiam accusantium harum
+    repudiandae perferendis vero, eaque tempora, totam quia quisquam doloremque debitis sit officiis nisi
+    quaerat repellat asperiores doloribus, modi excepturi.
+</p>
+<h1>Uitleg</h1>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nam quibusdam optio vel deleniti, debitis
+    consequatur ipsam, nihil veniam quia ipsa adipisci consectetur consequuntur eos quaerat praesentium
+    quasi itaque totam voluptas amet ab sed doloremque illo! Suscipit aliquid aperiam accusantium harum
+    repudiandae perferendis vero, eaque tempora, totam quia quisquam doloremque debitis sit officiis nisi
+    quaerat repellat asperiores doloribus, modi excepturi.
+</p>
+<h1>Uitleg</h1>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nam quibusdam optio vel deleniti, debitis
+    consequatur ipsam, nihil veniam quia ipsa adipisci consectetur consequuntur eos quaerat praesentium
+    quasi itaque totam voluptas amet ab sed doloremque illo! Suscipit aliquid aperiam accusantium harum
+    repudiandae perferendis vero, eaque tempora, totam quia quisquam doloremque debitis sit officiis nisi
+    quaerat repellat asperiores doloribus, modi excepturi.
+</p> -->
