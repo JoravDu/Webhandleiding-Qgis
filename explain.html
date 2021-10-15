@@ -39,17 +39,134 @@
         <nav class="sidebar">
             <ul>
                 <li>
-                    <a href="explain2.html#intro">Introductie</a>
+                    <a href="explain.html#intro">Introductie</a>
                 </li>
                 <li>
-                    <a href="explain2.html#explain">Uitleg</a>
+                    <a href="explain.html#basics">Basis</a>
                 </li>
                 <li>C</li>
                 <li>D</li>
             </ul>
         </nav>
         <main class="content">
-            
+            <section id="intro">
+                <div class="text-oneimage">
+                    <div class="text">
+                        <h1>Introductie</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cum dolorum fugit atque
+                            nobis
+                            beatae
+                            est, quos reiciendis dolore cupiditate dolorem. Quae aliquid nisi natus quis odio corporis
+                            vero
+                            ea
+                            ipsum
+                            nulla dolorum ut molestiae accusantium iusto ratione eum eos non sed, amet odit a dolorem
+                            nemo
+                            exercitationem perferendis! Ab necessitatibus sed ea atque, delectus at eaque corporis
+                            dolor!
+                            Earum.
+                        </p>
+                    </div>
+                    <div class="image-wrapper image-middle">
+                        <img loading="lazy" src="media/basis1.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section id="basics">
+                <div class="text-oneimage">
+                    <div class="text">
+                        <h1>Basis</h1>
+                        <p>
+                            Wanneer QGIS wordt opgestart, is dit het eerste scherm waar de gebruiker op terecht komt. Op
+                            het scherm kunnen ook andere deelvensters open staan, waaronder nieuws. Deze vensters zullen
+                            vanzelf verdwijnen wanneer er op de knop <code>nieuw project</code> wordt geklikt. De knop
+                            <code>nieuw project</code> is linksboven te vinden op de pagina. Het heeft het symbool van
+                            een wit A4
+                            papiertje.
+                        </p>
+                    </div>
+                    <div class="image-wrapper image-middle">
+                        <img loading="lazy" src="media/basis2.png" alt="">
+                    </div>
+                    <p>
+                        Wanneer het nieuwe project is gestart, wordt het volgende scherm getoond. Voordat er echt
+                        gestart wordt, is het belangrijk om de coördinaten correct te hebben. De coördinaten zijn
+                        rechtsonder in de pagina te vinden.
+                    </p>
+                    <div class="image-wrapper image-middle">
+                        <img loading="lazy" src="media/basis4.png" alt="">
+                    </div>
+                    <p>
+                        Door dubbel te klikken op de <code>coördinaten</code>, komt het
+                        volgende scherm tevoorschijn.
+                    </p>
+                    <div class="image-wrapper image-middle">
+                        <img loading="lazy" src="media/basis5.png" alt="">
+                    </div>
+                    <p>
+                        Het is namelijk mogelijk dat er andere coördinaten ingevuld zijn. Het is belangrijk om de
+                        coördinaten naar het Nederlandse coördinatensysteem te veranderen, dit kan gedaan worden door bovenin in
+                        <code>Filter</code> de
+                        volgende code in te vullen: <code>EPSG:28992</code>. Dit zijn de coördinaten van
+                        Amersfoort. Klik hierna op
+                        Amersfoort en daarna op 'OK’.
+                    </p>
+                    <h2>Plug-ins</h2>
+                    <p>
+                        Eenmaal terug op het beginscherm, kunnen er <code>plug-ins</code> geïnstalleerd worden. Plug-ins zijn kleine, handige (extra) programmaatjes of toevoegingen aan QGIS. 
+                        Hiermee kunnen bijvoorbeeld verschillende kaarten,
+                        lijnen, vlakken en punten toegevoegd worden. Plug-ins zijn boven in het scherm te vinden.
+                    </p>
+                    <div class="image-wrapper image-middle">
+                        <img loading="lazy" src="media/basis6.png" alt="">
+                    </div>
+                    <p>
+                        Hierna wordt het onderstaande scherm weergeven. Hierin staan welke plug-ins er zijn, welke (al) geïnstalleerd zijn
+                        en welke nog niet. Een veel gebruikte plug-in is de <code>PDOK Service plug-in</code> . Deze plug-in biedt
+                        duizenden datasets over verschillende onderwerpen aan. De plug-in kan gevonden worden door op <code>All
+                        (alles)</code> te klikken. Daarna kan er in de <code>zoekbalk (Search)</code> de plug-in ingetypt worden. Klik op de
+                        plug-in en klik op <code> install plugin (installeer plug-in)</code>.
+                    </p>
+                    <div class="image-wrapper image-middle">
+                        <img loading="lazy" src="media/basis7.png" alt="">
+                    </div>
+                    <p> Vervolgens is het onderstaande icoontje toegevoegd in het projectscherm. Wanneer er hierop
+                        geklikt
+                        wordt, verschijnt er een lijst met duizenden soorten datasets. Om het nu simpel te houden, wordt er
+                        gebruik gemaakt van twee soorten datasets. Download <code> nummer 15: OpenTopo achtergrondkaart</code> en <code>nummer 152: Dijken van
+                        geomorfologisch belang</code>. De data wordt gedownload door er twee keer op te klikken. Klik
+                        hierna op
+                        <code> sluiten (close)</code>.
+                    </p>
+                    <div class="slideshow-container fade">
+                        <div class="Containers">
+                            <div class="MessageInfo" style="color: black;">1 / 2</div>
+                            <img src="media/basis8.png" style="width:100%">
+                        </div>
+                        <div class="Containers">
+                            <div class="MessageInfo" style="color: black;">2 / 2</div>
+                            <img loading="lazy" src="media/basis10.png" style="width:100%">
+                        </div>
+
+                        <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <p>
+                        Terug op het projectscherm is de onderstaande afbeelding te zien. Hierin zijn de data geplaatst
+                        in het vak <code> lagen (Layers)</code>. Hierdoor is de kaart in het midden van het scherm gemaakt. In de lagen
+                        staat de data als het ware op elkaar. Hoe lager de data in lagen staat, hoe lager hij op het scherm
+                        staat. Hierdoor kan iedereen zelf bepalen welke informatie bovenop moet staan. Wanneer <code> opentopo
+                        achtergrondkaart</code> naar boven wordt geplaatst in lagen, zal de laag <code> Dijken van geomorfologisch
+                        belang</code> verdwijnen, doordat het nu onder de kaart van Nederland staat.
+                    </p>
+                    <div class="image-wrapper image-middle">
+                        <img loading="lazy" src="media/basis9.png" alt="">
+                    </div>
+                </div>
+
+            </section>
+
         </main>
     </main>
 

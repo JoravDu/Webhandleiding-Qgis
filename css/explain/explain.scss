@@ -11,6 +11,19 @@ $image-beforeafter-distance: 25px;
 $carousel-width: $content-width * 0.7;
 $carousel-margin: ($content-width - $carousel-width) / 2;
 
+$colors: (
+    // primary1: #7A938D,
+    primary1: #568259,
+    primary2: #e8e7e3,
+    text: #013220,
+    secondary: #6622CC,
+    accent-light: #FDE8E9,
+    accent-dark: #484D47,
+    accent-dark2: #2d2d2a,
+    accent-light2: #feb95f,
+    white: #fbfef9,
+);
+
 .focus-wrapper {
   width: 100%;
   display: flex;
@@ -29,6 +42,12 @@ $carousel-margin: ($content-width - $carousel-width) / 2;
       width: 100%;
     }
   }
+}
+
+code{
+    background-color: map-get($colors , primary2 );
+    border-radius: 3px;
+    padding: 2px;
 }
 
 .sticky {
@@ -59,6 +78,7 @@ $carousel-margin: ($content-width - $carousel-width) / 2;
 .image-wrapper {
   width: $image-width;
   height: auto;
+
   img {
     width: 100%;
   }
@@ -68,6 +88,7 @@ $carousel-margin: ($content-width - $carousel-width) / 2;
     display: block;
     width: auto;
     height: $image-beforeafter-distance;
+
   }
 }
 
@@ -95,7 +116,7 @@ $carousel-margin: ($content-width - $carousel-width) / 2;
       width: 100%;
       height: auto;
       height: 500px;
-      object-fit: cover;
+      object-fit: contain;
     }
   }
   .Back,

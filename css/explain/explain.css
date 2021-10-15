@@ -21,6 +21,12 @@
   width: 100%;
 }
 
+code {
+  background-color: #e8e7e3;
+  border-radius: 3px;
+  padding: 2px;
+}
+
 .sticky {
   position: -webkit-sticky !important;
   position: sticky !important;
@@ -90,8 +96,8 @@
   width: 100%;
   height: auto;
   height: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .slideshow-container .Back,
