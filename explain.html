@@ -8,10 +8,13 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <link rel="stylesheet" href="css/global/global.css">
     <link rel="stylesheet" href="css/global/menu/menu.css">
     <link rel="stylesheet" href="css/explain/explain.css">
+
+    <script src="javascript/stickysidebar.js"></script>
 
     <title>Uitleg</title>
 </head>
@@ -191,49 +194,9 @@
         </main>
     </main>
 
-
-    <script>
-        $(window).scroll(function () {
-            var scroll = $(window).scrollTop();
-            if (scroll <= 60) {
-                $(".sidebar").removeClass("sticky");
-            }
-            else if (scroll >= 61) {
-                $(".sidebar").addClass("sticky");
-            }
-        })
-    </script>
-
-    <script>
-        var slidePosition = 1;
-        SlideShow(slidePosition);
-
-        // forward/Back controls
-        function plusSlides(n) {
-            SlideShow(slidePosition += n);
-        }
-
-        //  images controls
-        function currentSlide(n) {
-            SlideShow(slidePosition = n);
-        }
-
-        function SlideShow(n) {
-            var i;
-            var slides = document.getElementsByClassName("Containers");
-            var circles = document.getElementsByClassName("dots");
-            if (n > slides.length) { slidePosition = 1 }
-            if (n < 1) { slidePosition = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < circles.length; i++) {
-                circles[i].className = circles[i].className.replace(" enable", "");
-            }
-            slides[slidePosition - 1].style.display = "block";
-            circles[slidePosition - 1].className += " enable";
-        }
-    </script>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    <script src="javascript/scroll.js"></script>
+    <script src="javascript/carousel.js"></script>
 
 </body>
 
