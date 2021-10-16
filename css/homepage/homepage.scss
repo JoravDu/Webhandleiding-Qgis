@@ -70,7 +70,8 @@ $colors: (
             width: 95%;
             position: absolute;
             display: flex;
-            top: 65.5%;
+            // top: 65.5%;
+            top: 50%;
             justify-content: center;
             .button {
                 background: map-get($colors, primary1);
