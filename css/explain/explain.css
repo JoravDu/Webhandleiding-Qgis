@@ -62,6 +62,55 @@ code {
   width: 7.5% !important;
 }
 
+h3::before {
+  content: "";
+  display: block;
+  width: auto;
+  height: 25px;
+}
+
+.text ul {
+  list-style: none;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.text ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.downloadbox {
+  margin-top: 25px;
+}
+
+.downloadbox .download {
+  background: #568259;
+  border: none;
+  height: 50px;
+  width: auto;
+  min-width: 90px;
+  border-radius: 100px;
+  border-bottom-left-radius: 0;
+  margin-right: 15px;
+}
+
+.downloadbox .download a {
+  padding: 20px;
+  text-decoration: none;
+  color: #fbfef9;
+  font-size: 1.0025rem;
+}
+
+.downloadbox .none {
+  border-bottom-left-radius: 100px;
+}
+
+.downloadbox .cornerright {
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 0;
+}
+
 .image-alone {
   width: 64.75%;
   height: auto;

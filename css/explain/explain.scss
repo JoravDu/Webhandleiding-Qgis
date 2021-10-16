@@ -79,6 +79,58 @@ code {
   width: $sidebar-width !important;
 }
 
+h3 {
+  &::before {
+    content: "";
+    display: block;
+    width: auto;
+    height: $image-beforeafter-distance;
+  }
+}
+
+.text{
+  ul {
+    list-style: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    li {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+  .downloadbox {
+      margin-top: 25px;
+      .download {
+          background: map-get($colors, primary1);
+          border: none;
+          height: 50px;
+          width: auto;
+          min-width: 90px;
+          //lb rb ro lo
+          border-radius: 100px;
+          border-bottom-left-radius: 0;
+          margin-right: 15px;
+          a {
+              padding: 20px;
+              text-decoration: none;
+              color: map-get($colors, white);
+              // text-transform: uppercase;
+              font-size: 1.0025rem;
+          }
+      }
+      .none {
+          border-bottom-left-radius: 100px;
+      }
+      .cornerright {
+          border-bottom-left-radius: 100px;
+          border-bottom-right-radius: 0;
+      }
+  }
+
+
+
 // Image out section
 .image-alone {
   width: $image-width-alone;
