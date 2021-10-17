@@ -1,12 +1,12 @@
 (function () {
     //If you want to include more images, add the link name and URL of the image in the array list below.
     let images_list = [
-        { "url": "media/osmdownloader/osmdownloader_1.png", "name" : "OSM_Downloader downloaden via Plugin menu.", "link" : "" },
-        { "url": "media/osmdownloader/osmdownloader_2.png", "name" : "OSM_Downloader automatisch toegevoegd aan de werkbalk.", "link" : "" },
-        { "url": "media/osmdownloader/osmdownloader_4.png", "name" : "Simpelweg het gebied selecteren waar je de dat OpenStreetmap data van wil hebben.", "link" : "" },
-        { "url": "media/osmdownloader/osmdownloader_6.png", "name" : "Gebied is geselecteerd, nu opslaan op een gewenste locatie. Voorkeur bij het project waar je aan werkt.", "link" : "" },
-        { "url": "media/osmdownloader/osmdownloader_8.png", "name" : "<code>.osm</code> bestand toevoegen aan QGIS. Dit kan door het bestand in QGIS te slepen.", "link" : "" },
-        { "url": "media/osmdownloader/osmdownloader_9.png", "name" : "Alle (deel)bestanden zijn toegevoegd aan QGIS. Je kan er nu mee aan de slag en de verschillende lagen naar wens bewerken.", "link" : "" }
+        { "url": "media/osmdownloader/osmdownloader_1.webp", "name" : "OSM_Downloader downloaden via Plugin menu.", "link" : "" },
+        { "url": "media/osmdownloader/osmdownloader_2.webp", "name" : "OSM_Downloader automatisch toegevoegd aan de werkbalk.", "link" : "" },
+        { "url": "media/osmdownloader/osmdownloader_3.webp", "name" : "Simpelweg het gebied selecteren waar je de dat OpenStreetmap data van wil hebben.", "link" : "" },
+        { "url": "media/osmdownloader/osmdownloader_4.webp", "name" : "Gebied is geselecteerd, nu opslaan op een gewenste locatie. Voorkeur bij het project waar je aan werkt.", "link" : "" },
+        { "url": "media/osmdownloader/osmdownloader_6.webp", "name" : "<code>.osm</code> bestand toevoegen aan QGIS. Dit kan door het bestand in QGIS te slepen.", "link" : "" },
+        { "url": "media/osmdownloader/osmdownloader_7.webp", "name" : "Alle (deel)bestanden zijn toegevoegd aan QGIS. Je kan er nu mee aan de slag en de verschillende lagen naar wens bewerken.", "link" : "" }
     ];
 
     let slider_id = document.querySelector("#hcg-slider-1");
