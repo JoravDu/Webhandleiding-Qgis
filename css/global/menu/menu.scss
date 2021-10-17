@@ -60,14 +60,18 @@ $colors: (
                 &:hover {
                     // color: map-get($colors, white);
                     color: map-get($colors, primary1);
+                    border: 2px solid map-get($colors , accent-dark);
+                    padding: 5px;
                 }
             }
-
-            a:hover{
+            .active {
+                // color: blue;
                 border: 2px solid map-get($colors , accent-dark);
                 padding: 5px;
+                &:hover {
+                    color: map-get($colors, accent-dark2);
+                }
             }
-
             &:nth-child(4) {
                 padding-right: 0 !important;
             }

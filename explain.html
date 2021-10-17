@@ -33,7 +33,7 @@
                 <a href="/history.html">Geschiedenis</a>
             </li>
             <li class="listitem">
-                <a href="/explain.html" onclick="return false">Uitleg</a>
+                <a class="active" href="/explain.html" onclick="return false">Uitleg</a>
             </li>
         </ul>
     </nav>
@@ -193,7 +193,7 @@
                         <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
                         <a class="forward" onclick="plusSlides(1)">&#10095;</a>
                     </div>
-                    
+
                     <p>
                         Terug op het projectscherm is de onderstaande afbeelding te zien. Hierin zijn de data geplaatst
                         in het vak <code>lagen (Layers)</code>. Hierdoor is de kaart in het midden van het scherm
@@ -359,8 +359,20 @@
                                 in
                                 QGIS en kan verder bewerkt worden.
                             </p>
-                            <div class="image-wrapper image-middle">
-                                <img src="https://i.redd.it/wovue4hkgcs71.jpg" alt="">
+                            <div class="carousel">
+                                <div id="hcg-slider-1" class="hcg-slider">
+                                    <div class="hcg-slide-container">
+                                        <div class="hcg-slider-body">
+                                            <a class="hcg-slides animated" style="display:block">
+                                                <span class="hcg-slide-number">1/5</span>
+                                                <img loading="lazy" src="media/osmdownloader/osmdownloader_1.png">
+                                            </a>
+                                        </div>
+                                        <a class="hcg-slide-prev" href="#">❮</a>
+                                        <a class="hcg-slide-next" href="#">❯</a>
+                                    </div>
+                                    <div class="hcg-slide-dot-control"></div>
+                                </div>
                             </div>
                             <h2 id="oefen-data">Oefen data</h2>
                             <p>
@@ -375,8 +387,8 @@
                                     <a href="" onclick="return false">
                                         Download oefen data
                                     </a>
+                            </div>
                         </div>
-                    </div>
                 </section>
 
             </section>
@@ -385,8 +397,9 @@
     </main>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
-    <script src="javascript/scroll.js"></script>
-    <script src="javascript/carousel.js"></script>
+    <script defer async src="javascript/scroll.js"></script>
+    <script defer src="javascript/carousel.js"></script>
+    <script defer src="javascript/carousel2.js"></script>
 
 </body>
 

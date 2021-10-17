@@ -48,11 +48,17 @@
 
 .menu .itemlist .listitem a:hover {
   color: #568259;
-}
-
-.menu .itemlist .listitem a:hover {
   border: 2px solid #484D47;
   padding: 5px;
+}
+
+.menu .itemlist .listitem .active {
+  border: 2px solid #484D47;
+  padding: 5px;
+}
+
+.menu .itemlist .listitem .active:hover {
+  color: #2d2d2a;
 }
 
 .menu .itemlist .listitem:nth-child(4) {
