@@ -19,7 +19,7 @@
         let href = (images_list[i].link == "" ? "" : ' href="' + images_list[i].link + '"');
         images_div += '<a' + href + ' class="hcg-slides animated"' + (i === 0 ? ' style="display:block"' : '') + '>' +
             '<span class="hcg-slide-number">' + (i + 1) + '/' + images_list.length + '</span>' +
-            '<img src="' + images_list[i].url + '" alt="' + images_list[i].name + '">' +
+            '<img loading="lazy" src="' + images_list[i].url + '" alt="' + images_list[i].name + '">' +
             '<span class="hcg-slide-text">' + images_list[i].name + '</span>' +
             '</a>';
         dots_div += '<span class="hcg-slide-dot' + (i === 0 ? ' dot-active' : '') + '" data-id="' + i + '"></span>';
