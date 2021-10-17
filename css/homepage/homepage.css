@@ -4,8 +4,8 @@
 }
 
 .content .hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(251, 254, 249, 0.5)), to(rgba(251, 254, 249, 0.5))), url("http://www.freekslangen.nl/reizen/utrecht/pics/Utrechtstad_1870.png");
-  background-image: linear-gradient(rgba(251, 254, 249, 0.5), rgba(251, 254, 249, 0.5)), url("http://www.freekslangen.nl/reizen/utrecht/pics/Utrechtstad_1870.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(251, 254, 249, 0.5))), url("https://upload.wikimedia.org/wikipedia/commons/0/06/Utrecht1865.png");
+  background-image: linear-gradient(rgba(251, 254, 249, 0.5)), url("https://upload.wikimedia.org/wikipedia/commons/0/06/Utrecht1865.png");
   background-repeat: no-repeat;
   background-position: 0% 50%;
   background-size: cover;
