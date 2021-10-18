@@ -3,6 +3,9 @@
   height: auto;
   margin-left: 13.755% !important;
   width: 64.19%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .slideshow::before, .slideshow::after {
@@ -21,6 +24,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 100% !important;
 }
 
 .slideshow .button {

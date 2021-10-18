@@ -60,6 +60,25 @@
                     <a href="/explain/verdieping/verdieping.html">Verdieping</a>
                 </li>
                 <li>
+                    <ul>
+                        <li>
+                            <a href="#categorize">Kleur categoriseren</a>
+                        </li>
+                        <li>
+                            <a href="#buffer">Buffer</a>
+                        </li>
+                        <li>
+                            <a href="#filter">Filteren</a>
+                        </li>
+                        <li>
+                            <a href="#station">Stations-data</a>
+                        </li>
+                        <li>
+                            <a href="#toolbox">Toolbox</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
                     <a href="/explain/extra/extra.html">Extra</a>
                 </li>
             </ul>
@@ -68,14 +87,217 @@
             <section id="intro">
                 <h1>Verdieping</h1>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. In fuga at nulla, maxime vitae doloribus
-                    libero aspernatur adipisci illum cum aut consequatur iste ducimus ipsam numquam iure amet corporis
-                    provident, veniam ea tempora eaque quod? Incidunt corrupti repudiandae excepturi maiores nemo ad,
-                    reprehenderit nesciunt quisquam sed laudantium obcaecati? Nam magni unde aut minus quisquam
-                    asperiores consectetur. Quisquam quibusdam aut numquam delectus at, eveniet omnis doloribus? Nostrum
-                    magni possimus cum sequi veritatis iusto nemo ut, ad consequuntur, aliquid, debitis perferendis
-                    saepe.
+                    In deze verdieping worden de geadvanceerdere functies uitgelegd van QGIS. In QGIS kan je
+                    gebruikmaken van onder meer een processing toolbox en een filter. De processing toolbox is een
+                    verzameling van een functies, vaak algoritmen, die ingewikkelde berekeningen/wiskundige functies
+                    uitvoeren door het enkel ingeven van parameters door de gebruiker. In dit onderdeel zal er ook
+                    gebruik gemaakt worden van de processing toolbox, zo wordt bijvoorbeeld het buffer algoritme
+                    toegepast.
                 </p>
+            </section>
+            <section id="categorize">
+                <h2>Kleur categoriseren</h2>
+                <p>
+                    Buiten het veranderen van de kleur van de scholen is het ook mogelijk om ieder soort school een
+                    eigen kleur te geven. Kies in het menu <code>symbology</code>voor het pijltje naast
+                    <code>single symbol</code> zodat er meer keuzes te zien zijn. Kies nu voor <code>catogorized</code>.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/verdieping/categoriseren/categoriseren1.webp" alt="">
+                </div>
+                <p>
+                    Kies bij value voor <code>SOORT SCHOOL</code>
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/verdieping/categoriseren/categoriseren2.webp" alt="">
+                </div>
+                <p>
+                    Kies <code>classify</code> om de volgende lijst toe te voegen.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/verdieping/categoriseren/categoriseren3.webp" alt="">
+                </div>
+                <p>
+                    Nu is te zien dat alle verschillende soorten scholen een eigen kleur hebben.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/verdieping/categoriseren/categoriseren4.webp" alt="">
+                </div>
+            </section>
+            <section id="buffer">
+                <h2>Buffer</h2>
+                <p>
+                    Met QGIS is er ook de mogelijkheid om een buffer te maken. Met deze functie wordt er als het ware
+                    een ruimte om een lijn of punt heen gezet om een bepaalde afstand te markeren. Hier wordt uitgelegd
+                    hoe een buffer gemaakt wordt in QGIS.
+                </p>
+                <p>
+                    Er zal in dit voorbeeld een buffer gemaakt worden voor de lijn “spoor”. Zorg dat deze laag is
+                    geselecteerd.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/verdieping/buffer/buffer1.webp" alt="">
+                </div>
+                <p>
+                    Typ vervolgens in de zoekbalk buffer in, dit werkt zowel op Windows, MacOS als op Linux
+                    hetzelfde. De functie buffer zal dan verschijnen.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/verdieping/buffer/buffer2.webp" alt="">
+                </div>
+                <p>
+                    Door op buffer te klikken wordt het volgende venster getoond. Het is nu mogelijk om de afstand van
+                    de
+                    buffer te bepalen en om een deel van de opmaak van de buffer te bepalen, bijvoorbeeld ronde randen.
+                    Hoe hoger het aantal segementen <code>Segments</code> hoe scherper de randen van de buffer worden (
+                    de buffer wordt een stuk ronder
+                    ).
+                    Ook is het mogelijk om de resultaten in elkaar over te laten lopen. Klik hiervoor
+                    <code>Dissolve result</code> aan.
+                    Klik hierna op <code>Run</code> en het algoritme zal uitgevoerd worden.
+                </p>
+                <div class="slideshow">
+                    <img src="../../media/verdieping/buffer/buffer3.webp" alt="" class="slides">
+                    <img loading="lazy" src="../../media/verdieping/buffer/buffer4.webp" alt="" class="slides">
+                    <button class="button left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="button right" onclick="plusDivs(+1)">&#10095;</button>
+                </div>
+            </section>
+            <section id="filter">
+                <h2>Filter</h2>
+                <p>
+                    In dit voorbeeld wordt getoont hoe er een filter toegepast kan worden op een catogorie. Hiervoor
+                    wordt gebruik gemaakt van een filter op de bepaalde soorten scholen.
+                    Door met de linkermuisknop op ‘scholen’ te klikken verschijnt het volgende menu. Kies hier
+                    <code>Filter…</code>.
+                    Na hier op te klikken verschijnt het onderstaande venster.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/verdieping/filter/filter2.webp" alt="">
+                </div>
+                <p>
+                    Vervolgens wordt het filter bepaalt, in dit voorbeeld gaan we filteren op <code>Soort School</code>.
+                    Door eerst <code>SOORT SCHOOL</code> te klikken en vervolgens op <code>sample</code>
+                    verschijnt in de rechter kolom een lijst met de verschillende soorten scholen die zich in het
+                    CSV-bestand
+                    bevindt.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/verdieping/filter/filter3.webp" alt="">
+                </div>
+                <p>
+                    In dit voorbeeld zal er gefilterd worden op ‘hbo-scholen’ en ‘mbo-scholen’. Om op deze soorten
+                    scholen te filteren wordt het onderstaande genoteerd.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/verdieping/filter/filter4.webp" alt="">
+                </div>
+                <p>
+                    Klik op <code>OK</code> en het filter wordt toegepast. Nu zijn alleen de hbo- en de
+                    mbo-scholen nog zichtbaar.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/verdieping/filter/filter5.webp" alt="">
+                </div>
+            </section>
+            <section id="station">
+                <h2>PDOK naar shapefile</h2>
+                <p>
+                    Om een laag te openen via PDOK wordt er op het PDOK-logo geklikt in de balk. Vervolgens kan er
+                    doormiddel van de zoekbalk gezocht worden naar de benodigde laag.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/verdieping/station/station1.webp" alt="">
+                </div>
+                <p>
+                    Voor dit voorbeeld wordt een achtergrond laag en een stationslaag toegevoegd. Zie onderstaande
+                    afbeeldingen om te zien hoe dit moet.
+                </p>
+                <div class="slideshow2">
+                    <img src="../../media/verdieping/station/station2.webp" alt="" class="slides2">
+                    <img loading="lazy" src="../../media/verdieping/station/station3.webp" alt="" class="slides2">
+                    <button class="button left" onclick="plusDivs2(-1)">&#10094;</button>
+                    <button class="button right" onclick="plusDivs2(+1)">&#10095;</button>
+                </div>
+                <p>
+                    In de PDOK plug-in kan je dubbelklikken op een laag om deze toe te voegen. Ook is het mogelijk om
+                    dit te doen door de gewenste laag aan te klikken en de knop <code>Laad deze in QGIS</code>.
+                </p>
+            </section>
+            <section id="toolbox">
+                <h2>QGIS Toolbox</h2>
+                <p>
+                    Met de <code>Processing Toolbox</code> kunnen verschillende algoritmen, bewerkingen en berekeningen
+                    worden gedaan. De Toolbox kan gevonden worden in de balk bovenin het scherm.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/verdieping/toolbox/toolbox1.webp" alt="">
+                </div>
+                <p>
+                    Bij dit voorbeeld zal de afstand tussen de scholen en het spoor benadrukt worden. In de zoekbalk aan
+                    de rechterkant van het beeldscherm kan je zoeken op <em>distance</em> of zoeken naar
+                    <code>line to hub</code>.
+                    Klik op <code>Distance to nearest hub (line to hub)</code>.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/verdieping/toolbox/toolbox2.webp" alt="">
+                </div>
+                <p>
+                    Selecteer bij <code>source points layer</code> de laag <code>scholen</code> en bij
+                    <code>destination hubs layer</code> de laag
+                    <em>spoor</em>. Bij <code>measurement unit</code> kan gekozen worden voor meters of kilometers.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/verdieping/toolbox/toolbox3.webp" alt="">
+                </div>
+                <p>
+                    Door op <code>Run</code> te klikken komen de volgende lijnen te staan van de scholen naar het spoor.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/verdieping/toolbox/toolbox4.webp" alt="">
+                </div>
+                <p>
+                    Om bij de laag <em>station</em> een filter toe te kunnen passen moet deze laag eerst omgezet worden
+                    naar
+                    een <em>Shapefile</em>. Klik op de rechtermuisknop om het menu weer omhoog te halen en klik
+                    vervolgens
+                    op <code>Export</code> en <code>Save Features as…</code>.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/verdieping/toolbox/toolbox5.webp" alt="">
+                </div>
+                <p>
+                    Nu verschijnt het volgende menu. Kies als bestandstype <code>ESRI Shapefile</code> en geef
+                    deze file een naam. Zorg dat de CRS (EPSG:28992) ook goed ingesteld staat.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/verdieping/toolbox/toolbox6.webp" alt="">
+                </div>
+                <p>
+                    Nu kan er een filter worden toegepast op de laag station. Dit wordt weer gedaan via de
+                    optie <code>Filter</code>.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/verdieping/toolbox/toolbox7.webp" alt="">
+                </div>
+                <p>
+                    In het volgende voorbeeld wordt er gefilterd op de stations in Utrecht. Open het filtervenster en
+                    dubbelklik vervolgens op <code>Naam</code>, deze komt in het formuleveld te staan.
+                    Selecteer <code>LIKE</code> als knop het formuleveld en schrijf hierachter <code>‘%Utrecht%’</code>.
+                    <strong>Vergeet hierbij niet de aanhalingstekens te gebruiken anders werkt het filter niet.</strong>
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/verdieping/toolbox/toolbox8.webp" alt="">
+                </div>
+                <p>
+                    Nu zijn alle stations waar de naam Utrecht in voorkomt (bijv. Utrecht Centraal) gefilterd en
+                    weergegeven
+                    op de kaart. Dit bestand met filter kan opgeslagen worden in diverse bestandstypen, denk hierbij aan
+                    <code>GeoJSON, ESRI Shapefile, GeoPackage, CSV</code> en eventueel naar een <code>AutoCAD</code>-formaat.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/verdieping/toolbox/toolbox9.webp" alt="">
+                </div>
             </section>
         </main>
     </main>
@@ -83,6 +305,8 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
     <script defer async src="../../javascript/scroll.js"></script>
     <script src="../../javascript/menu-hoverstate.js"></script>
+    <script src="javascript/slideshow1.js"></script>
+    <script src="javascript/slideshow2.js"></script>
 
 </body>
 

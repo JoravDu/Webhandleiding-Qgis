@@ -3,23 +3,22 @@ $colors: (
     primary1: #568259,
     primary2: #e8e7e3,
     text: #013220,
-    secondary: #6622CC,
-    accent-light: #FDE8E9,
-    accent-dark: #484D47,
+    secondary: #6622cc,
+    accent-light: #fde8e9,
+    accent-dark: #484d47,
     accent-dark2: #2d2d2a,
     accent-light2: #feb95f,
-    white: #fbfef9,
+    white: #fbfef9
 );
 
-
 $primary-07: rgba(86, 130, 89, 0.7);
-
 
 .content {
     width: 100%;
     height: auto;
     .hero {
-        background-image: linear-gradient(rgba(251,254,249,0.5)), url('https://upload.wikimedia.org/wikipedia/commons/0/06/Utrecht1865.png');
+        background-image: linear-gradient(rgba(251, 254, 249, 0.5)),
+            url('../../media/Utrecht1865.webp');
         background-repeat: no-repeat;
         background-position: 0% 50%;
         background-size: cover;
@@ -63,7 +62,7 @@ $primary-07: rgba(86, 130, 89, 0.7);
                     font-size: 1.0025rem;
                 }
                 &:hover {
-                    box-shadow: inset 3px 3px 5px rgb(65, 98, 67), inset -3px -3px 5px map-get($colors , primary1 );
+                    box-shadow: inset 3px 3px 5px rgb(65, 98, 67), inset -3px -3px 5px map-get($colors, primary1);
                     a {
                         color: white;
                     }
@@ -89,25 +88,24 @@ $primary-07: rgba(86, 130, 89, 0.7);
     }
 }
 
-#citebutton {
-    width: 50px;
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 999;
-    border: none;
-    outline: none;
-    background-color: $primary-07;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 100%;
-    font-size: 18px;
-    a {
+a {
+    #citebutton {
+        width: 50px;
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 999;
+        border: none;
+        outline: none;
+        background-color: $primary-07;
         color: white;
-    }
-    &:hover {
-        background-color: map-get($colors, primary1);
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 100%;
+        font-size: 18px;
+        &:hover {
+            background-color: map-get($colors, primary1);
+        }
     }
 }
