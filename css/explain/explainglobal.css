@@ -1,0 +1,93 @@
+.focus-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.focus-wrapper .sidebar {
+  width: 8.3%;
+  border-right: 0.5px solid #000;
+}
+
+.focus-wrapper .sidebar ul {
+  list-style: none;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.focus-wrapper .sidebar ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.9vw;
+}
+
+.focus-wrapper .sidebar ul li ul {
+  padding: 0;
+  padding-left: 10px;
+}
+
+.focus-wrapper .sidebar ul li a {
+  text-decoration: underline;
+  color: #000;
+}
+
+.focus-wrapper .sidebar ul li a:hover {
+  color: #568259;
+}
+
+.focus-wrapper .content {
+  width: 91.7%;
+  padding: 2.2925%;
+  padding-top: 1.14625%;
+}
+
+.focus-wrapper .content section {
+  height: auto;
+  width: 100%;
+}
+
+.focus-wrapper .content section::after, .focus-wrapper .content section::before {
+  content: "";
+  display: block;
+  width: auto;
+  height: 6.25px;
+}
+
+.focus-wrapper .content section code {
+  background-color: #e8e7e3;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+.focus-wrapper .content section .image-wrapper {
+  width: 55.02%;
+  height: auto;
+}
+
+.focus-wrapper .content section .image-wrapper img {
+  width: 100%;
+}
+
+.focus-wrapper .content section .image-wrapper::after, .focus-wrapper .content section .image-wrapper::before {
+  content: "";
+  display: block;
+  width: auto;
+  height: 25px;
+}
+
+.focus-wrapper .content .image-middle {
+  width: 55.02%;
+  margin-left: 18.34% !important;
+  margin-right: 18.34% !important;
+}
+
+.sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0 !important;
+  left: 0;
+  height: 100vh;
+  width: 8.3% !important;
+}
+/*# sourceMappingURL=explainglobal.css.map */

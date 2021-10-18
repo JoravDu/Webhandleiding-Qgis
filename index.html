@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <link rel="stylesheet" href="css/global/global.css">
     <link rel="stylesheet" href="css/global/menu/menu.css">
     <link rel="stylesheet" href="css/homepage/homepage.css">
-    <link rel="stylesheet" href="css/homepage/shapes/shapes.css">
 
     <title>Qgis handleiding voor HU minor</title>
 </head>
@@ -19,28 +22,34 @@
     <nav class="menu">
         <ul class="itemlist">
             <li class="listitem">
-                <a href="/" onclick="return false">Home</a>
+                <a href="/">Home</a>
             </li>
-            <li class="listitem">
-                <a href="/goals.html">Leerdoelen</a>
-            </li>
-            <li class="listitem">
-                <a href="/history.html">Geschiedenis</a>
-            </li>
-            <li class="listitem">
-                <a href="/explain.html">Uitleg</a>
+            <li class="listitem sub">
+                <a href="/explain/explain.html">Uitleg</a>
+                <ul class="submenu">
+                    <li class="submenuItem">
+                        <a href="/explain/explain.html">Over</a>
+                    </li>
+                    <li class="submenuItem">
+                        <a href="/explain/basics/basics.html">Basis</a>
+                    </li>
+                    <li class="submenuItem">
+                        <a href="/explain/verdieping/verdieping.html">Verdieping</a>
+                    </li>
+                    <li class="submenuItem">
+                        <a href="/explain/extra/extra.html">Extra</a>
+                    </li>
+                </ul>
             </li>
         </ul>
     </nav>
 
 
     <main class="content">
-
         <div class="hero">
-
             <div class="buttonbox">
                 <button class="button">
-                    <a href="/explain.html"  target="_blank">let's go!</a>
+                    <a href="/explain/explain.html" target="_blank">let's go!</a>
                 </button>
             </div>
             <div class="herotext">
@@ -51,8 +60,10 @@
         <div class="intro">
             <h1>(Inleiding)</h1>
             <p>
-                Deze QGIS handleiding is gemaakt door vijf studenten van de Hogeschool Utrecht tijdens de minor Datavisualisatie en Infographics tijdens het schooljaar 2021/2022. 
-                In deze handleiding wordt er onder andere een uitleg (basis en verdieping) gegeven over het programma QGIS. 
+                Deze QGIS handleiding is gemaakt door vijf studenten van de Hogeschool Utrecht tijdens de minor
+                Datavisualisatie en Infographics tijdens het schooljaar 2021/2022.
+                In deze handleiding wordt er onder andere een uitleg (basis en verdieping) gegeven over het programma
+                QGIS.
             </p>
             <br>
             <p>
@@ -60,8 +71,57 @@
             </p>
         </div>
 
+        <div class="intro">
+            <section id="qgisintro">
+                <h2><em>Wat is QGIS?</em></h2>
+                <p>
+                    QGIS is een geografisch informatiesysteem met een General Public License. Het is een officieel
+                    project van de OSGeo. Dit systeem werkt op verschillende hardware, zoals Windows, MacOS, Linux en
+                    Android<sup>BETA</sup>.
+                </p>
+                <h2><em>Waar is QGIS voor te gebruiken?</em></h2>
+                <p>
+                    QGIS is een eenvoudig te gebruiken GIS dat algemene functies en mogelijkheden biedt. In het begin
+                    was QGIS alleen voor het bekijken van gegevens. QGIS heeft het punt in zijn evolutie bereikt waarop
+                    het door velen wordt gebruikt voor het dagelijks noodzakelijk zichtbaar maken van GIS-gegevens. QGIS
+                    ondersteunt een groot aantal indelingen voor raster- en vectorgegevens, waarbij nieuwe indelingen
+                    gemakkelijk kunnen worden toegevoegd met behulp van de architectuur voor plug-ins (QGIS, z.d.). QGIS
+                    kun je gebruiken voor het bekijken van gegevens van kaarten, het maken van kaarten en bevragen van
+                    gegevens. Het maken, beheren, bewerken en exporteren van gegevens. Het analyseren van gegevens en
+                    ook kunnen er kaarten worden gepubliceerd op het internet (QGIS, z.d.-a).
+                </p>
+                <h2><em>Wat zijn de leerdoelen?</em></h2>
+                <p>
+                    De leerdoelen die wij hebben tijdens deze workshop zijn de basis van QGIS. Denk hierbij aan: lijnen,
+                    vlakken, punten en het aanpassen van kleuren binnen de geografische kaart. Ook het installeren van
+                    plug-ins, zoals bijvoorbeeld PDOK, behoort tot onze leerdoelen. Dit is de basis van QGIS. Vervolgens
+                    zal er meer uitgelegd worden over de verdieping, het echte werk van QGIS. Dit zal gaan over het
+                    stylen van een kaart, het maken van een buffer, het werken met de processing toolbox, het exporteren
+                    van lagen en als laatst: het filteren van data in de geografische kaart.
+                </p>
+                <h2><em>Wat is de geschiedenis van QGIS?</em></h2>
+                <p>
+                    QGIS is een open source programma dat sinds 2002 onder de GNU GPL-licentie wordt ontwikkeld. Dit
+                    wordt
+                    gedaan door een team van vrijwilligers en organisaties <cite>(QGIS, z.d.)</cite>. Doordat het
+                    programma open source
+                    is, is het programma vrij en bewerkbaar voor iedereen. Dit programma is geschreven in C++ en Python,
+                    eventuele plug-ins kunnen hier ook in geschreven worden. De gebruikersomgeving van QGIS is gebaseerd
+                    op
+                    Qt-toolkit <cite>(Wikipedia, 2021a)</cite>.
+                </p>
+            </section>
+        </div>
     </main>
 
+    <button id="citebutton" title="Ga naar de bronnen">
+        <a href="bronnen.html">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </button>
+    
+    <script src="javascript/cite.js"></script>
+    <script src="../javascript/menu-hoverstate.js"></script>
 </body>
 
 </html>

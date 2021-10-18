@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="../../css/explain/explainglobal.css">
+    <link rel="stylesheet" href="../../css/explain/basics/basics.css">
+    <link rel="stylesheet" href="../../css/global/global.css">
+    <link rel="stylesheet" href="../../css/global/menu/menu.css">
+
+    <script defer async src="../../javascript/stickysidebar.js"></script>
+
+    <title>Uitleg - Basis</title>
+</head>
+
+<body>
+
+    <nav class="menu">
+        <ul class="itemlist">
+            <li class="listitem">
+                <a href="/">Home</a>
+            </li>
+            <li class="listitem sub">
+                <a class="active" href="/explain/explain.html">Uitleg</a>
+                <ul class="submenu">
+                    <li class="submenuItem">
+                        <a href="">Over</a>
+                    </li>
+                    <li class="submenuItem">
+                        <a href="/explain/basics/basics.html">Basis</a>
+                    </li>
+                    <li class="submenuItem">
+                        <a href="/explain/verdieping/verdieping.html">Verdieping</a>
+                    </li>
+                    <li class="submenuItem">
+                        <a href="/explain/extra/extra.html">Extra</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="focus-wrapper">
+        <nav class="sidebar">
+            <ul>
+                <li>
+                    <a href="/explain/explain.html">Over</a>
+                </li>
+                <li>
+                    <a href="/explain/basics/basics.html">Basics</a>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#intro">Introductie</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#plugins">Plug-ins</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/explain/verdieping/verdieping.html">Verdieping</a>
+                </li>
+                <li>
+                    <a href="/explain/extra/extra.html">Extra</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="content">
+            <section id="intro">
+                <h1>Introductie tot QGIS</h1>
+                <p>
+                    Wanneer QGIS wordt opgestart, is dit het eerste scherm waar de gebruiker op terecht komt. Op
+                    het scherm kunnen ook andere deelvensters open staan, waaronder nieuws. Deze vensters zullen
+                    vanzelf verdwijnen wanneer er op de knop <code>nieuw project</code> wordt geklikt. De knop
+                    <code>nieuw project</code> is linksboven te vinden op de pagina. Het heeft het symbool van
+                    een wit A4 papiertje.
+                </p>
+                <div class="imagewrapper">
+                    <div class="image-wrapper image-middle">
+                        <img src="../../media/basics/basis2.webp" alt="">
+                    </div>
+                </div>
+                <p>
+                    Wanneer het nieuwe project is gestart, wordt het volgende scherm getoond. Voordat er echt
+                    gestart wordt, is het belangrijk om de coördinaten correct te hebben. De coördinaten zijn
+                    rechtsonder in de pagina te vinden.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/basics/basis4.webp" alt="">
+                </div>
+                <p>
+                    Door dubbel te klikken op de <code>coördinaten</code>, komt het
+                    volgende scherm tevoorschijn.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img loading="lazy" src="../../media/basics/basis5.webp" alt="">
+                </div>
+                <p>
+                    Het is namelijk mogelijk dat er andere coördinaten ingevuld zijn. Het is belangrijk om de
+                    coördinaten naar het Nederlandse coördinatensysteem te veranderen, dit kan gedaan worden door
+                    bovenin in
+                    <code>Filter</code> de
+                    volgende code in te vullen: <code>EPSG:28992</code>. Dit zijn de coördinaten van
+                    Amersfoort. Klik hierna op
+                    Amersfoort en daarna op 'OK’.
+                </p>
+            </section>
+            <section id="plugins">
+                <h2>Plugins</h2>
+                <p>
+                    Eenmaal terug op het beginscherm, kunnen er <code>plug-ins</code> geïnstalleerd worden. Plug-ins
+                    zijn kleine, handige (extra) programmaatjes of toevoegingen aan QGIS.
+                    Hiermee kunnen bijvoorbeeld verschillende kaarten,
+                    lijnen, vlakken en punten toegevoegd worden. Plug-ins zijn boven in het scherm te vinden.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img loading="lazy" src="../../media/basics/basis6.webp" alt="">
+                </div>
+                <p>
+                    Hierna wordt het onderstaande scherm weergeven. Hierin staan welke plug-ins er zijn, welke (al)
+                    geïnstalleerd zijn
+                    en welke nog niet. Een veel gebruikte plug-in is de <code>PDOK Service plug-in</code>. Deze
+                    plug-in biedt
+                    duizenden datasets over verschillende onderwerpen aan. De plug-in kan gevonden worden door op
+                    <code>All
+                    (alles)</code> te klikken. Daarna kan er in de <code>zoekbalk (Search)</code> de plug-in
+                    ingetypt worden. Klik op de
+                    plug-in en klik op <code>install plugin (installeer plug-in)</code>.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img loading="lazy" src="../../media/basics/basis7.webp" alt="">
+                </div>
+                <p> Vervolgens is het onderstaande icoontje toegevoegd in het projectscherm. Wanneer er hierop
+                    geklikt
+                    wordt, verschijnt er een lijst met duizenden soorten datasets. Om het nu simpel te houden, wordt
+                    er
+                    gebruik gemaakt van twee soorten datasets. Download
+                    nummer <code>15: OpenTopo achtergrondkaart</code> en nummer <code>152: Dijken van
+                    geomorfologisch belang</code>. De data wordt gedownload door er twee keer op te klikken. Klik
+                    hierna op
+                    <code> close (sluiten)</code>.
+                </p>
+
+                <div class="slideshow">
+                    <img src="../../media/basics/basis8.webp" alt="" class="slides">
+                    <img loading="lazy" src="../../media/basics/basis10.webp" style="margin-left: 6.25%;" alt=""
+                        class="slides">
+                    <button class="button left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="button right" onclick="plusDivs(+1)">&#10095;</button>
+                </div>
+
+                <p>
+                    Terug op het projectscherm is de onderstaande afbeelding te zien. Hierin zijn de data geplaatst
+                    in het vak <code>lagen (Layers)</code>. Hierdoor is de kaart in het midden van het scherm
+                    gemaakt. In de lagen
+                    staat de data als het ware op elkaar. Hoe lager de data in lagen staat, hoe lager hij op het
+                    scherm
+                    staat. Hierdoor kan iedereen zelf bepalen welke informatie bovenop moet staan. Wanneer <code>OpenTopo
+                    achtergrondkaart</code> naar boven wordt geplaatst in lagen, zal de laag <code>Dijken van geomorfologisch
+                    belang</code> verdwijnen, doordat het nu onder de kaart van Nederland staat.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img loading="lazy" src="../../media/basics/basis9.webp" alt="">
+                </div>
+            </section>
+        </main>
+    </main>
+
+    <script defer src="javascript/slideshow.js"></script>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    <script defer async src="../../javascript/scroll.js"></script>
+    <script src="../../javascript/menu-hoverstate.js"></script>
+
+</body>
+
+</html>

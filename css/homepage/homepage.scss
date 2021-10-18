@@ -1,19 +1,3 @@
-// $colors: (
-//     primary: #8bbf41,
-//     secondary: #ee7914,
-//     accent-light: #efe64c,
-//     accent-dark: #2d2d2a,
-//     white: #efeada,
-// );
-
-// $colors: (
-//     primary: #8bbf41,
-//     secondary: #5941a9,
-//     accent-light: #feb95f,
-//     accent-dark: #1f2041,
-//     white: #fbfef9,
-// );
-
 $colors: (
     // primary1: #7A938D,
     primary1: #568259,
@@ -27,27 +11,15 @@ $colors: (
     white: #fbfef9,
 );
 
+
+$primary-07: rgba(86, 130, 89, 0.7);
+
+
 .content {
     width: 100%;
     height: auto;
     .hero {
-        // background-image: 
-        // linear-gradient(
-        //     rgba(255, 255, 255, 0.5),
-        //     rgba(255, 255, 255, 0.5)
-        //   ),
-        // url("https://objects.library.uu.nl/reader/img.php?obj=1874-351073&img=/72/46/38/72463859667832144848804572952047205750.jpg");
-        // background-image: 
-        // linear-gradient(
-        //     rgba(251, 254, 249, 0.5),
-        //     rgba(251, 254, 249, 0.5)
-        //   ),
-        // url("http://www.freekslangen.nl/reizen/utrecht/pics/Utrechtstad_1870.png");
-
-        // Onder nieuw met CC license
         background-image: linear-gradient(rgba(251,254,249,0.5)), url('https://upload.wikimedia.org/wikipedia/commons/0/06/Utrecht1865.png');
-
-
         background-repeat: no-repeat;
         background-position: 0% 50%;
         background-size: cover;
@@ -57,7 +29,6 @@ $colors: (
         margin-right: auto;
         height: 40vw;
         margin-top: 2.5vw;
-
         .herotext {
             position: absolute;
             text-align: center;
@@ -115,5 +86,28 @@ $colors: (
             line-height: 1.75;
             text-align: justify;
         }
+    }
+}
+
+#citebutton {
+    width: 50px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 999;
+    border: none;
+    outline: none;
+    background-color: $primary-07;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 100%;
+    font-size: 18px;
+    a {
+        color: white;
+    }
+    &:hover {
+        background-color: map-get($colors, primary1);
     }
 }

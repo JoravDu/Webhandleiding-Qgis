@@ -1,0 +1,76 @@
+$padding-sidebar: 0.8%;
+
+$sidebar-width: 7.5% + $padding-sidebar;
+$content-width: 100% - $sidebar-width;
+$content-padding: $content-width * 0.025;
+$content-padding-top: $content-padding / 2;
+
+$image-width: $content-width * 0.6;
+$image-width-alone: $content-width * 0.7;
+$image-margin: ($content-width - $image-width) / 2;
+$image-beforeafter-distance: 25px;
+
+$carousel-width: $content-width * 0.7;
+$carousel-margin: ($content-width - $carousel-width) / 2;
+
+$colors: (
+  primary1: #568259,
+  primary2: #e8e7e3,
+  text: #013220,
+  secondary: #6622cc,
+  accent-light: #fde8e9,
+  accent-dark: #484d47,
+  accent-dark2: #2d2d2a,
+  accent-light2: #feb95f,
+  white: #fbfef9
+);
+
+#download, #data {
+    button {
+      margin-left: $image-beforeafter-distance / 2;
+      margin-right: $image-beforeafter-distance / 2;
+      background: map-get($colors, primary1);
+      border: none;
+      height: 50px;
+      width: 125px;
+      border-radius: 100px;
+      border-bottom-left-radius: 0;
+      &:nth-child(1) {
+        margin-left: 0;
+      }
+      a {
+        text-decoration: none;
+        color: map-get($colors, white);
+        text-transform: uppercase;
+        font-size: 1.0025rem;
+      }
+      &:hover {
+        box-shadow: inset 3px 3px 5px rgb(65, 98, 67), inset -3px -3px 5px map-get($colors, primary1);
+        a {
+          color: white;
+        }
+      }
+    }
+    .downloadbox {
+      &::after,
+      &::before {
+        content: "";
+        display: block;
+      }
+      &::after {
+        margin-bottom: $image-beforeafter-distance;
+      }
+      &::before {
+        margin-top: $image-beforeafter-distance;
+      }
+    }
+  }
+  
+  #data {
+    .downloadbox {
+      button {
+        width: 150px;
+        border-radius: 100px;
+      }
+    }
+  }

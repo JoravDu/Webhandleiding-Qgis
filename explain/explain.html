@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/explain/explainglobal.css">
+    <link rel="stylesheet" href="../css/explain/explainhome.css">
+    <link rel="stylesheet" href="../css/global/global.css">
+    <link rel="stylesheet" href="../css/global/menu/menu.css">
+
+    <script defer async src="../javascript/stickysidebar.js"></script>
+
+    <title>Uitleg</title>
+</head>
+
+<body>
+
+    <nav class="menu">
+        <ul class="itemlist">
+            <li class="listitem">
+                <a href="/">Home</a>
+            </li>
+            <li class="listitem sub">
+                <a class="active" href="/explain/explain.html">Uitleg</a>
+                <ul class="submenu">
+                    <li class="submenuItem">
+                        <a href="" onclick="return false">Over</a>
+                    </li>
+                    <li class="submenuItem">
+                        <a href="/explain/basics/basics.html">Basis</a>
+                    </li>
+                    <li class="submenuItem">
+                        <a href="/explain/verdieping/verdieping.html">Verdieping</a>
+                    </li>
+                    <li class="submenuItem">
+                        <a href="/explain/extra/extra.html">Extra</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="focus-wrapper">
+        <nav class="sidebar">
+            <ul>
+                <li>
+                    <a href="/explain/explain.html#home">Over</a>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <a href="/explain/explain.html#download">Download QGIS</a>
+                        </li>
+                        <li>
+                            <a href="/explain/explain.html#data">Download dataset</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/explain/basics/basics.html">Basics</a>
+                </li>
+                <li>
+                    <a href="/explain/verdieping/verdieping.html">Verdieping</a>
+                </li>
+                <li>
+                    <a href="/explain/extra/extra.html">Extra</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="content">
+            <main id="home">
+                <h1>Over QGIS</h1>
+                <p>
+                    QGIS is een eenvoudig te gebruiken GIS (Geografisch InformatieSysteem) dat algemene functies en
+                    mogelijkheden biedt. In het begin
+                    was QGIS alleen voor het bekijken van gegevens. QGIS heeft het punt in zijn evolutie bereikt waarop
+                    het door velen wordt gebruikt voor het dagelijks noodzakelijk zichtbaar maken van GIS-gegevens. QGIS
+                    ondersteunt een groot aantal indelingen voor raster- en vectorgegevens, waarbij nieuwe indelingen
+                    gemakkelijk kunnen worden toegevoegd met behulp van de architectuur voor plug-ins <cite>(Qgis,
+                        z.d.)</cite>. QGIS
+                    kun je gebruiken voor het bekijken van gegevens van kaarten, het maken van kaarten en bevragen van
+                    gegevens. Het maken, beheren, bewerken en exporteren van gegevens. Het analyseren van gegevens en
+                    ook kunnen er kaarten worden gepubliceerd op het internet <cite>(Qgis, z.d.)</cite>.
+                </p>
+                <section id="download">
+                    <h1>Download QGIS</h1>
+                    <p>
+                        Om QGIS te kunnen gebruiken, moet het eerst geïnstalleerd worden op je apparaat. Klik hieronder
+                        op de downloadknop
+                        voor het apparaat waar je QGIS op wil gebruiken. <em>QGIS zal gedownload worden vanaf de
+                            officiële server van QGIS.</em>
+                    </p>
+                    <div class="downloadbox">
+                        <button><a href="https://qgis.org/downloads/QGIS-OSGeo4W-3.20.3-1.msi">Windows</a></button>
+                        <button><a href="https://qgis.org/downloads/macos/qgis-macos-pr.dmg">MacOS</a></button>
+                        <button>
+                            <a href="https://www.qgis.org/en/site/forusers/alldownloads.html#linux">Linux</a>
+                        </button>
+                    </div>
+                </section>
+                <section id="data">
+                    <h1>Download Dataset</h1>
+                    <p>
+                        Download hieronder de dataset die bij deze tutorial hoort.
+                    </p>
+                    <div class="downloadbox">
+                        <button><a href="" onclick="return false">Download
+                                dataset</a></button>
+                    </div>
+                    <p>
+                        De data kan in QGIS ingeladen worden door de bestanden erin te slepen. Bij de shapefile is het
+                        belangrijk dat de <code>.shp</code>-file in QGIS gesleept wordt. Als dit niet gedaan wordt, kan
+                        de data niet goed in QGIS ingeladen worden.
+                    </p>
+                    <br>
+                    <p>
+                        <em>De bovenstaande methode werkt niet bij CSV bestanden. Deze moeten via de
+                            "</em><code>Add Data</code><em>"-knop toegevoegd worden in QGIS. Dit wordt in de tutorial
+                            verder
+                            toegelicht.</em>
+                    </p>
+                </section>
+            </main>
+        </main>
+    </main>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    <script defer async src="../javascript/scroll.js"></script>
+    <script src="../javascript/menu-hoverstate.js"></script>
+
+</body>
+
+</html>

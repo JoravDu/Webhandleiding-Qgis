@@ -1,0 +1,109 @@
+$padding-sidebar: 0.8%;
+
+$sidebar-width: 7.5% + $padding-sidebar;
+$content-width: 100% - $sidebar-width;
+$content-padding: $content-width * 0.025;
+$content-padding-top: $content-padding / 2;
+
+$image-width: $content-width * 0.6;
+$image-width-alone: $content-width * 0.7;
+$image-margin: ($content-width - $image-width) / 2;
+$image-beforeafter-distance: 25px;
+
+$carousel-width: $content-width * 0.7;
+$carousel-margin: ($content-width - $carousel-width) / 2;
+
+$colors: (
+  // primary1: #7A938D,
+  primary1: #568259,
+  primary2: #e8e7e3,
+  text: #013220,
+  secondary: #6622cc,
+  accent-light: #fde8e9,
+  accent-dark: #484d47,
+  accent-dark2: #2d2d2a,
+  accent-light2: #feb95f,
+  white: #fbfef9
+);
+
+.focus-wrapper {
+  width: 100%;
+  display: flex;
+  .sidebar {
+    width: $sidebar-width;
+    border-right: 0.5px solid #000;
+    ul {
+      list-style: none;
+      padding-left: 10px;
+      padding-top: 10px;
+      li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 0.9vw;
+        ul {
+          padding: 0;
+          padding-left: 10px;
+        }
+        a {
+          text-decoration: underline;
+          color: #000;
+          &:hover {
+            color: map-get($colors, primary1);
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    width: $content-width;
+    padding: $content-padding;
+    padding-top: $content-padding-top;
+
+    section {
+      height: auto;
+      width: 100%;
+      &::after,
+        &::before {
+          content: "";
+          display: block;
+          width: auto;
+          height: $image-beforeafter-distance / 4;
+        }
+      code {
+        background-color: map-get($colors, primary2);
+        border-radius: 3px;
+        padding: 2px;
+      }
+      .image-wrapper {
+        width: $image-width;
+        height: auto;
+      
+        img {
+          width: 100%;
+        }
+        &::after,
+        &::before {
+          content: "";
+          display: block;
+          width: auto;
+          height: $image-beforeafter-distance;
+        }
+      }
+    }
+    .image-middle {
+      width: $image-width;
+      margin-left: $image-margin !important;
+      margin-right: $image-margin !important;
+    }
+
+  }
+}
+
+.sticky {
+  position: sticky !important;
+  top: 0 !important;
+  left: 0;
+  height: 100vh;
+  width: $sidebar-width !important;
+}

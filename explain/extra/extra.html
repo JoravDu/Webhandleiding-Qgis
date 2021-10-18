@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="../../css/explain/extra/extra.css">
+    <link rel="stylesheet" href="../../css/explain/explainglobal.css">
+    <link rel="stylesheet" href="../../css/global/global.css">
+    <link rel="stylesheet" href="../../css/global/menu/menu.css">
+
+    <script defer async src="../../javascript/stickysidebar.js"></script>
+
+    <title>Uitleg - Verdieping</title>
+</head>
+
+<body>
+
+    <nav class="menu">
+        <ul class="itemlist">
+            <li class="listitem">
+                <a href="/">Home</a>
+            </li>
+            <li class="listitem sub">
+                <a class="active" href="/explain/explain.html">Uitleg</a>
+                <ul class="submenu">
+                    <li class="submenuItem">
+                        <a href="/">Over</a>
+                    </li>
+                    <li class="submenuItem">
+                        <a href="/explain/basics/basics.html">Basis</a>
+                    </li>
+                    <li class="submenuItem">
+                        <a href="/explain/verdieping/verdieping.html">Verdieping</a>
+                    </li>
+                    <li class="submenuItem">
+                        <a href="/explain/extra/extra.html">Extra</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="focus-wrapper">
+        <nav class="sidebar">
+            <ul>
+                <li>
+                    <a href="/explain/explain.html">Over</a>
+                </li>
+                <li>
+                    <a href="/explain/basics/basics.html">Basics</a>
+                </li>
+                <li>
+                    <a href="/explain/verdieping/verdieping.html">Verdieping</a>
+                </li>
+                <li>
+                    <a href="/explain/extra/extra.html">Extra</a>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <a href="#plugins">Plug-ins</a>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <a href="#pdok">PDOK</a>
+                                </li>
+                                <li>
+                                    <a href="#geocoding">Geocoding</a>
+                                </li>
+                                <li>
+                                    <a href="#latlon">Lat Lon Tools</a>
+                                </li>
+                                <li>
+                                    <a href="#osm">OSM Downloader</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main class="content">
+            <section id="plugins">
+                <h1>Plug-ins</h1>
+                <p>
+                    QGIS is een handig programma, maar niet alles is mogelijk met de basistools die QGIS
+                    biedt. Hiervoor kan je kleine, handige programmaatjes downloaden en toevoegen aan het
+                    programma. Deze worden plug-ins genoemd. Deze plug-ins voegen iets toe aan bepaalde
+                    functies of voegen volledig nieuwe functies toe aan QGIS. Enkele van deze plug-ins
+                    worden hieronder toegelicht.
+                </p>
+            </section>
+            <section id="pdok">
+                <h2>PDOK</h2>
+                <p>
+                    Publieke Dienstverlening Op de Kaart (PDOK) is een platform voor het aanbieden van
+                    geografische datasets van verschillende Nederlandse overheden. Dit zijn actuele en
+                    betrouwbare gegevens en kunnen gebruikt worden door zowel individuen als bedrijven. PDOK
+                    stelt digitale geo-informatie als dataservices en bestanden beschikbaar. De PDOK
+                    diensten zijn gebaseerd op open data en daarom voor iedereen vrij beschikbaar.
+                </p>
+                <section>
+                    <h4>Locatieserver</h4>
+                    <p>
+                        Met de locatieserver plug-in kan je invullen waar je naartoe wil en de plug-in
+                        brengt
+                        je
+                        scherm/canvas daar dan heen. Je kan zoeken op specifieke plaatsen, zoals Utrecht
+                        of Amsterdam, maar ook zoeken op een adres, zoals: Heidelberglaan 15, Utrecht.
+                    </p>
+                </section>
+                <section>
+                    <h4>Services</h4>
+                    <p>
+                        De services plug-in biedt een groot scala aan verschillende openbare datasets, ook
+                        wel Open Data genoemd. Al deze data kan en mag gratis en voor niets gebruikt
+                        worden en wordt aangeboden door de Overheid of overheidsinstanties. Datasets die
+                        aangeboden worden zijn onder meer: luchtfoto’s, topografische
+                        achtergrondkaarten, Natura 2000-kaart en de AHN (Algemeen Hoogtebestand
+                        Nederland).
+                    </p>
+                </section>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/extra/plugin-pdok2.webp" alt="">
+                </div>
+            </section>
+            <section id="geocoding">
+                <h2>Geocoding</h2>
+                <p>
+                    De GeoCoding plug-in is een handige plug-in voor mensen die wél een adres hebben, maar
+                    de coördinaten niet weten van dit adres. Om dit te achterhalen moet er gegeocodeerd worden,
+                    of in het Engels: GeoCoding. Bij GeoCoding kan er een adres ingevoerd worden in een
+                    soort zoekmachine en zoekt het programma uit op welke coördinaten dit adres zich dan
+                    bevindt. De plug-in biedt twee mogelijkheden om te geocoderen: invullen van een adres en
+                    het klikken om de kaart om een adres te verkrijgen (zonder coördinaten).
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/extra/plugin-geocoding4.webp" alt="">
+                </div>
+            </section>
+            <section id="latlon">
+                <h2>Lat Lon Tools</h2>
+                <p>
+                    Met de Lat Lon Tools plug-in heb je veel verschillende manieren om allerlei
+                    verschillende
+                    soorten “coördinaten” te verkrijgen. Het is mogelijk om coördinaten te kopiëren door
+                    simpelweg op de kaart te klikken (hiermee krijg je WGS84 coördinaten). Het is mogelijk
+                    om te zoomen naar de ingevoerde coördinaten. Ook is het mogelijk om het canvas extent
+                    (waar is de gebruiker op de kaart of waar bevindt de data zich op de kaart) te
+                    verkrijgen, dit kan handig zijn om te gebruiken in externe programma’s of tools, zoals
+                    LeafletJS of OpenLayers. Daarnaast kunnen alle soorten coördinaten verkregen worden door
+                    het venster te openen van de plug-in. Hier krijg je onder meer de coördinaten van het
+                    project CRS, een gekozen CRS, maar ook WGS84 coördinaten.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img src="../../media/extra/plugin-latlontool1.webp" alt="">
+                </div>
+            </section>
+            <section id="osm">
+                <h2>OpenStreetMap Downloader</h2>
+                <p>
+                    Met OSM downloader kan data die opgeslagen zit in kaarten van OpenStreetmap (een soort
+                    openbare Google Maps) gedownload worden. Door simpelweg de plugin te activeren en een
+                    vierkant of rechthoek te tekenen op de kaart, wordt alle data die in dit vierkant valt
+                    (en de features die gekoppeld zijn aan de features die in het vierkant vallen)
+                    automatisch gedownload. Dit bestand is een <i>.osm</i> bestand, dit kan ingeladen worden
+                    in QGIS en kan verder bewerkt worden.
+                </p>
+                <div class="slideshow">
+                    <img src="../../media/extra/osmdownloader_1.webp"  alt="" class="slides">
+                    <img loading="lazy" src="../../media/extra/osmdownloader_2.webp" alt="" class="slides">
+                    <!-- <img loading="lazy" src="../../media/extra/osmdownloader_3.webp" alt="" class="slides"> -->
+                    <img loading="lazy" src="../../media/extra/osmdownloader_4.webp" alt="" class="slides">
+                    <img loading="lazy" src="../../media/extra/osmdownloader_6.webp" alt="" class="slides">
+                    <img loading="lazy" src="../../media/extra/osmdownloader_7.webp" alt="" class="slides">
+                    <button class="button left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="button right" onclick="plusDivs(+1)">&#10095;</button>
+                </div>
+            </section>
+        </main>
+    </main>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    <script defer async src="../../javascript/scroll.js"></script>
+    <script src="../../javascript/menu-hoverstate.js"></script>
+    <script src="javascript/slideshow.js"></script>
+
+</body>
+
+</html>
