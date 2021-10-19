@@ -1,5 +1,4 @@
 $colors: (
-    // primary1: #7A938D,
     primary1: #568259,
     primary2: #e8e7e3,
     text: #013220,
@@ -45,7 +44,6 @@ $primary-07: rgba(86, 130, 89, 0.7);
             width: 95%;
             position: absolute;
             display: flex;
-            // top: 65.5%;
             top: 50%;
             justify-content: center;
             .button {
@@ -102,7 +100,7 @@ a {
         color: white;
         cursor: pointer;
         padding: 15px;
-        border-radius: 100%;
+        border-radius: 10px;
         font-size: 18px;
         &:hover {
             background-color: map-get($colors, primary1);
