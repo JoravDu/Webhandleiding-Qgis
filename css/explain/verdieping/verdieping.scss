@@ -57,7 +57,6 @@ $colors: (
             background: rgba(0, 0, 0, .8);
             color: white;
         }
-
     }
     .left {
         left: 0;
@@ -66,76 +65,6 @@ $colors: (
         right: 0;
     }
 }
-
-$padding-sidebar: 0.8%;
-
-$sidebar-width: 7.5% + $padding-sidebar;
-$content-width: 100% - $sidebar-width;
-$content-padding: $content-width * 0.025;
-$content-padding-top: $content-padding / 2;
-
-$image-width: $content-width * 0.6;
-$image-width-alone: $content-width * 0.7;
-$image-margin: ($content-width - $image-width) / 2;
-$image-beforeafter-distance: 25px;
-
-$carousel-width: $content-width * 0.7;
-$carousel-margin: ($content-width - $carousel-width) / 2;
-
-$colors: (
-  primary1: #568259,
-  primary2: #e8e7e3,
-  text: #013220,
-  secondary: #6622cc,
-  accent-light: #fde8e9,
-  accent-dark: #484d47,
-  accent-dark2: #2d2d2a,
-  accent-light2: #feb95f,
-  white: #fbfef9
-);
-
-.slideshow {
-    position: relative;
-    height: auto;
-    margin-left: $carousel-margin !important;
-    width: $carousel-width;
-    &::before,
-    &::after {
-        display: block;
-        content: '';
-        height: $image-beforeafter-distance * 1.25;
-    }
-    .slides {
-        max-height: 430px;
-        display: none;
-        object-fit: contain;
-        object-position: 50 50;
-        justify-content: center;
-    }
-    .button {
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%);
-
-        height: 40px;
-        width: 20px;
-        border: 0;
-        background: rgba(0, 0, 0, .1);
-
-        &:hover {
-            background: rgba(0, 0, 0, .8);
-            color: white;
-        }
-
-    }
-    .left {
-        left: 0;
-    }
-    .right {
-        right: 0;
-    }
-}
-
 .slideshow2 {
     position: relative;
     height: auto;

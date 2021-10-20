@@ -53,12 +53,10 @@ $colors: (
       }
     }
   }
-
   .content {
     width: $content-width;
     padding: $content-padding;
     padding-top: $content-padding-top;
-
     section {
       height: auto;
       width: 100%;
@@ -77,7 +75,6 @@ $colors: (
       .image-wrapper {
         width: $image-width;
         height: auto;
-      
         img {
           width: 100%;
         }
@@ -98,7 +95,6 @@ $colors: (
 
   }
 }
-
 .sticky {
   position: sticky !important;
   top: 0 !important;
