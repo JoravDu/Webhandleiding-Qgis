@@ -3,9 +3,6 @@
   height: auto;
   margin-left: 13.755% !important;
   width: 64.19%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .slideshow::before, .slideshow::after {
