@@ -306,9 +306,77 @@
             <section id="georefereren">
                 <h2>Georefereren</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet nobis temporibus voluptate alias
-                    sit impedit vitae veritatis cupiditate asperiores accusantium.
+                    In dit voorbeeld wordt getoond hoe je een kaart kan georefereren. Er wordt als het ware een kaart
+                    over jouw kaart heen geplakt op de exacte plek waar deze hoort. Download hiervoor het databestand
+                    <code>spoorkaart1889</code>. Ga in QGIS naar <code>raster</code>, en vervolgens naar
+                    <code>Georeferencing</code>.
                 </p>
+                <div class="image-wrapper image-middle">
+                    <img loading="lazy" src="../../media/verdieping/georefereren/georefereren1.png" alt="">
+                </div>
+                <p>
+                    Het onderstaande scherm opent nu. Klik op het icoontje links boven om een nieuw raster te openen en
+                    voeg
+                    het bestand ‘<code>spoorkaart1889</code> toe.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img loading="lazy" src="../../media/verdieping/georefereren/georefereren2.png" alt="">
+                </div>
+                <p>
+                    Om deze kaart op de juiste manier over de bestaande kaart heen te plaatsen is het van belang dat
+                    de punten die worden toegevoegd op de zelfde plek staan in beide kaarten. Denk hierbij bijvoorbeeld
+                    aan oude plaatsen.
+                    Klik op <code>add point</code> en kies een plek op de kaart die door de jaren heen ongeveer
+                    hetzelfde is gebleven. Als voorbeeld is
+                    Den Helder als punt gekozen.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img loading="lazy" src="../../media/verdieping/georefereren/georefereren3.png" alt="">
+                </div>
+                <p>
+                    Na het toevoegen van de punt verschijnt het onderstaande venster. Hier kun je de coördinaten van de
+                    bestaande kaart invullen. Makkelijker is om ze direct in de bestaande kaart te markeren. Kies
+                    <code>from map canvas</code> .
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img loading="lazy" src="../../media/verdieping/georefereren/georefereren4.png" alt="">
+                </div>
+                <p>
+                    Direct komt de orginele kaart weer in beeld. Markeer hier hetzelfde punt. 
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img loading="lazy" src="../../media/verdieping/georefereren/georefereren5.png" alt="">
+                </div>
+                <p>
+                    Maak zo nog 4 punten aan verdeeld over Nederland.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img loading="lazy" src="../../media/verdieping/georefereren/georefereren6.png" alt="">
+                </div>
+                <p>
+                    Kies <code>settings</code> en dan <code>transformation settings</code> om aan te geven hoe de kaart getransformeerd moet worden. 
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img loading="lazy" src="../../media/verdieping/georefereren/georefereren7.png" alt="">
+                </div>
+                <p>
+                    In dit voorbeeld is gekozen voor een <em>Thin Plate Spline</em>, maar kijk gerust eens wat de andere opties doen. Klik op <code>ok</code> als je een keuze hebt gemaakt. Let erop dat je <code>Load in QGIS when done</code> aanvinkt, anders wordt de kaart <b>niet</b> ingeladen
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img loading="lazy" src="../../media/verdieping/georefereren/georefereren8.png" alt="">
+                </div>
+                <p>
+                    Vervolgens kan het Georefereren gestart worden door te kiezen voor <code>file</code> en <code>Start Georeferencing</code>.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img loading="lazy" src="../../media/verdieping/georefereren/georefereren9.png" alt="">
+                </div>
+                <p>
+                    Je ziet nu dat de kaart precies over de nederlandse achtergrondkaart is geplakt. 
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img loading="lazy" src="../../media/verdieping/georefereren/georefereren10.png" alt="">
+                </div>
             </section>
         </main>
     </main>
