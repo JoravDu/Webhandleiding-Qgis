@@ -1,4 +1,4 @@
-$padding-sidebar: 0.8%;
+$padding-sidebar: 1.5%;
 
 $sidebar-width: 7.5% + $padding-sidebar;
 $content-width: 100% - $sidebar-width;
@@ -44,7 +44,8 @@ $colors: (
           padding-left: 10px;
         }
         a {
-          text-decoration: underline;
+          // text-decoration: underline;
+          text-decoration: none;
           color: #000;
           &:hover {
             color: map-get($colors, primary1);
