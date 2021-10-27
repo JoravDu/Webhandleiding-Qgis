@@ -77,6 +77,9 @@
                             <a href="#toolbox">QGIS Toolbox</a>
                         </li>
                         <li>
+                            <a href="#extract">Extract by location</a>
+                        </li>
+                        <li>
                             <a href="#georefereren">Georefereren</a>
                         </li>
                     </ul>
@@ -303,6 +306,46 @@
                 </div>
             </section>
 
+            <section id="extract">
+                <h2>Extract by location</h2>
+                <p>
+                    Om erachter te komen welke panden in een binnen een bepaalde afstand liggen van bijvoorbeeld de
+                    stations, kan er weer gebruik worden gemaakt van de <code>processing toolbox</code>.
+
+                    Allereerst moet er een buffer om de stations heen gemaakt worden, de grootte van de buffer is het
+                    bereik dat gemeten wordt. Selecteer de stationslaag en zoek onderin naar de bufferfunctie. Kies
+                    <code>buffer</code>.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img loading="lazy" src="../../media/verdieping/extract/extract1.webp" alt="">
+                </div>
+                <p>
+                    In dit voorbeeld zal gekeken worden naar de panden die binnen een straal van 1 kilometer om het
+                    station liggen. Kies bij <code>distance</code> 1 kilometer. Kies vervolgens <code>run</code> om de
+                    buffer te plaatsen.
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img loading="lazy" src="../../media/verdieping/extract/extract2.webp" alt="">
+                </div>
+                <p>
+                    Ga in de toolbox opzoek naar <code>Extract</code> en kies <code>Extract by location</code>
+                </p>
+                <div class="image-wrapper image-middle">
+                    <img loading="lazy" src="../../media/verdieping/extract/extract3.webp" alt="">
+                </div>
+                <p>
+                    Het onderstaande menu verschijnt. Zorg dat bij <code>Extract Feature</code> de panden zijn geselecteerd en bij de
+                    <code>comparing to the feature</code> de buffer van de stations is geselecteerd. Kies vervolgens <code>run</code> om de
+                    panden te selecteren die binnen 1 kilometer van de stations liggen.
+                </p>
+                <div class="slideshow3">
+                    <img loading="lazy" src="../../media/verdieping/extract/extract4.webp" alt="" class="slides3">
+                    <img loading="lazy" src="../../media/verdieping/extract/extract5.webp" alt="" class="slides3">
+                    <button class="button left" onclick="plusDivs3(-1)">&#10094;</button>
+                    <button class="button right" onclick="plusDivs3(+1)">&#10095;</button>
+                </div>
+            </section>
+
             <section id="georefereren">
                 <h2>Georefereren</h2>
                 <p>
@@ -371,7 +414,8 @@
                     In dit voorbeeld is gekozen voor een <em>Thin Plate Spline</em>, maar kijk gerust eens wat de andere
                     opties doen. Klik op <code>OK</code> als je een keuze hebt gemaakt. Let erop dat je
                     <code>Load in QGIS when done</code> aanvinkt, anders wordt de kaart <b>niet</b> ingeladen. Let er
-                    ook op het CRS (Coördinaten ReferentieSysteem) (<code>Target SRS</code>) overeenkomt met het het CRS van de moderne kaart.
+                    ook op het CRS (Coördinaten ReferentieSysteem) (<code>Target SRS</code>) overeenkomt met het het CRS
+                    van de moderne kaart.
                 </p>
                 <div class="image-wrapper image-middle">
                     <img loading="lazy" src="../../media/verdieping/georefereren/georefereren8.webp" alt="">
@@ -398,6 +442,7 @@
     <script src="../../javascript/menu-hoverstate.js"></script>
     <script src="javascript/slideshow1.js"></script>
     <script src="javascript/slideshow2.js"></script>
+    <script src="javascript/slideshow3.js"></script>
 
 </body>
 
